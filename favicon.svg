@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#070707"/>
+  <rect x="0" y="62" width="64" height="2" fill="#C8A96E" opacity="0.6"/>
+  <!-- Lettre H stylisée en serif -->
+  <text x="32" y="46" 
+    font-family="Georgia, serif" 
+    font-size="38" 
+    font-weight="300"
+    fill="#C8A96E"
+    text-anchor="middle"
+    letter-spacing="-1">H</text>
+</svg>
