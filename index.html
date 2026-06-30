@@ -1,552 +1,1535 @@
-<!DOCTYPE html>
-<html lang="en">
+z<!DOCTYPE html>
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HEEEYJUDES — Visual Studio</title>
+<meta name="description" content="HEEYJUDES — Studio de photographie et vidéo cinématique. Portraits, shootings marque, reportages événementiels. Cap-Haïtien · Ouanaminthe, Haïti.">
+<meta name="keywords" content="photographe haiti, studio photo cap-haitien, shooting portrait, photographe événementiel, video cinématique, maternité">
+<meta property="og:title" content="HEEYJUDES — Visual Studio">
+<meta property="og:description" content="L'art de l'instant. Portraits, shootings marque et reportages cinématiques en Haïti.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://heeeyjudes.com/">
+<meta property="og:image" content="image/portrait-confiance-editorial.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_HT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HEEYJUDES — Visual Studio · Cap-Haïtien">
+<meta name="twitter:description" content="L'art de l'instant. Portraits, shootings marque et reportages cinématiques en Haïti.">
+<meta name="twitter:image" content="image/portrait-confiance-editorial.webp">
+<meta name="robots" content="index, follow">
+<meta name="author" content="HEEYJUDES Visual Studio">
+<meta name="geo.region" content="HT">
+<meta name="geo.placename" content="Cap-Haïtien, Haïti">
+<link rel="canonical" href="https://heeeyjudes.com/">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','G-ZPGGD2MH4K');
+</script>
+<title>JUDESPHOTOGRAPHY01 — Visual Studio ·</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/1456106ba6.js" crossorigin="anonymous"></script>
 <style>
-:root{--o:#FFa500;--o2:#FFa500;--o3:#FFa500;--dk:#0A0A0A;--dk2:#111111;--dk3:#181818;--wh:#F7F3EE;--mu:rgba(247,243,238,0.38);--serif:'Instrument Serif',serif;--display:'Syne',sans-serif;}
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{background:var(--dk);color:var(--wh);font-family:var(--display);overflow-x:hidden;cursor:none;}
-a{text-decoration:none;color:inherit;}
-button{cursor:none;font-family:var(--display);}
-#cd{width:8px;height:8px;background:var(--o);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-#cr{width:40px;height:40px;border:1.5px solid rgba(255,90,31,.5);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:all .14s ease;}
-body.hov #cr{transform:translate(-50%,-50%) scale(2.2);border-color:var(--o);}
-body.hov #cd{transform:translate(-50%,-50%) scale(0);}
-header{position:fixed;top:0;left:0;right:0;z-index:1000;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;transition:background .4s,border-color .4s;border-bottom:1px solid transparent;}
-header.s{background:rgba(10,10,10,.95);backdrop-filter:blur(24px);border-color:rgba(255,255,255,.06);}
-.hl{font-family:var(--display);font-weight:800;font-size:1.1rem;letter-spacing:-.02em;}
-.hl em{color:var(--o);font-style:normal;}
-nav{display:flex;align-items:center;gap:4px;}
-nav a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);padding:8px 16px;border-radius:100px;transition:all .3s;}
-nav a:hover{color:var(--wh);background:rgba(255,255,255,.07);}
-.hb{background:var(--o);color:var(--dk);border:none;padding:10px 24px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:100px;transition:all .3s;}
-.hb:hover{background:var(--o2);transform:scale(1.03);}
-.hmb{display:none;background:none;border:none;color:var(--wh);font-size:1.4rem;padding:8px;}
-#mn{position:fixed;inset:0;background:var(--dk);z-index:999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;opacity:0;visibility:hidden;transition:.4s ease;}
-#mn.on{opacity:1;visibility:visible;}
-#mn a{font-size:clamp(2.5rem,8vw,5rem);font-family:var(--serif);font-style:italic;color:var(--wh);transition:color .3s;display:block;text-align:center;padding:8px 0;}
-#mn a:hover{color:var(--o);}
-#mnc{position:absolute;top:24px;right:32px;background:none;border:none;color:var(--mu);font-size:2rem;}
-.hero{min-height:100vh;position:relative;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
-.hlft{display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 100px 48px;position:relative;z-index:2;}
-.heb{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--o);margin-bottom:32px;display:flex;align-items:center;gap:12px;}
-.heb::before{content:'';width:32px;height:1px;background:var(--o);}
-.htitle{font-family:var(--display);font-weight:800;font-size:clamp(4.5rem,9vw,11rem);line-height:.88;letter-spacing:-.04em;margin-bottom:40px;}
-.htitle .or{color:var(--o);display:block;}
-.htitle .it{font-family:var(--serif);font-style:italic;font-weight:400;font-size:.75em;line-height:1;display:block;margin-top:8px;}
-.hd{font-size:.95rem;line-height:1.75;color:var(--mu);max-width:360px;margin-bottom:48px;}
-.hctas{display:flex;gap:12px;flex-wrap:wrap;}
-.bm{background:var(--o);color:var(--dk);border:none;padding:14px 32px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:100px;transition:all .3s;display:flex;align-items:center;gap:10px;}
-.bm:hover{background:var(--o2);transform:translateY(-2px);}
-.bg{background:transparent;color:var(--wh);border:1px solid rgba(255,255,255,.2);padding:14px 32px;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:100px;transition:all .3s;}
-.bg:hover{border-color:var(--o);color:var(--o);}
-.hrgt{position:relative;overflow:hidden;}
-.hmi{width:100%;height:100%;object-fit:cover;object-position:top center;filter:brightness(.85);}
-.hrgt::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--dk) 0%,transparent 40%);}
-.hbadge{position:absolute;bottom:110px;right:32px;background:var(--o);color:var(--dk);padding:16px 20px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.4;z-index:3;border-radius:4px;}
-.hbadge strong{display:block;font-size:1.4rem;letter-spacing:-.02em;margin-bottom:2px;}
-.hstats{position:absolute;bottom:0;left:0;right:0;background:rgba(14,14,14,.75);backdrop-filter:blur(12px);display:flex;border-top:1px solid rgba(255,255,255,.06);z-index:4;}
-.hst{flex:1;padding:20px 24px;border-right:1px solid rgba(255,255,255,.06);}
-.hst:last-child{border-right:none;}
-.hsn{font-family:var(--display);font-weight:800;font-size:2rem;color:var(--o);line-height:1;}
-.hsl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--mu);margin-top:4px;}
-.mq-wrap{background:var(--o);padding:14px 0;overflow:hidden;white-space:nowrap;}
-.mq-track{display:inline-flex;animation:mq 18s linear infinite;}
-@keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-.mq-item{font-family:var(--display);font-weight:800;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dk);padding:0 48px;display:inline-flex;align-items:center;gap:16px;}
-.mq-dot{width:6px;height:6px;background:var(--dk);border-radius:50%;opacity:.4;display:inline-block;}
-.about{padding:120px 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);}
-.atag{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--o);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
-.atag::before{content:'';width:24px;height:1px;background:var(--o);}
-.atit{font-family:var(--display);font-weight:800;font-size:clamp(2.8rem,5vw,5.5rem);line-height:.92;letter-spacing:-.04em;margin-bottom:36px;}
-.atit em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--o);font-size:.9em;}
-.abody{font-size:1rem;line-height:1.85;color:var(--mu);margin-bottom:40px;}
-.acards{display:flex;flex-direction:column;gap:1px;}
-.acard{padding:24px;background:var(--dk3);border:1px solid rgba(255,255,255,.06);transition:all .3s;}
-.acard:hover{background:rgba(255,90,31,.06);border-color:rgba(255,90,31,.25);}
-.acn{font-family:var(--display);font-weight:800;font-size:2.5rem;color:var(--o);opacity:.25;line-height:1;margin-bottom:8px;}
-.acard h4{font-size:.95rem;font-weight:700;margin-bottom:8px;}
-.acard p{font-size:.85rem;line-height:1.7;color:var(--mu);}
-.apw{position:relative;}
-.aph{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;display:block;}
-.apa{position:absolute;bottom:-16px;left:-16px;width:120px;height:120px;background:var(--o);display:flex;align-items:center;justify-content:center;flex-direction:column;}
-.apa strong{font-weight:800;font-size:2rem;color:var(--dk);line-height:1;}
-.apa span{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(10,10,10,.7);}
-.svcs{padding:120px 48px;background:var(--dk2);}
-.stag{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--o);margin-bottom:16px;display:block;}
-.stit{font-family:var(--display);font-weight:800;font-size:clamp(2.5rem,5vw,5rem);line-height:.92;letter-spacing:-.04em;margin-bottom:70px;text-align:center;}
-.stit em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--o);}
-.pkgs{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;}
-.pkg{background:var(--dk3);border:1px solid rgba(255,255,255,.06);padding:36px 28px;position:relative;overflow:hidden;transition:transform .4s,background .4s;}
-.pkg::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;transition:height .4s;}
-.pp::before{background:linear-gradient(90deg,var(--wh),var(--o));}
-.pg::before{background:linear-gradient(90deg,var(--o),#b05a10);}
-.ps::before{background:linear-gradient(90deg,#888,#bbb);}
-.pb::before{background:linear-gradient(90deg,#7a4a2a,#c07040);}
-.pkg:hover{transform:translateY(-6px);background:rgba(255,90,31,.04);}
-.pkg:hover::before{height:5px;}
-.pkbest{background:var(--o);color:var(--dk);font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:5px 12px;display:inline-block;border-radius:100px;margin-bottom:16px;}
-.pkt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mu);margin-bottom:12px;}
-.pkp{font-family:var(--display);font-weight:800;font-size:3.5rem;color:var(--wh);line-height:1;margin-bottom:32px;letter-spacing:-.04em;}
-.pkf{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px;}
-.pkf li{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--mu);}
-.pkf li i{color:var(--o);font-size:.7rem;flex-shrink:0;}
-.pkbtn{width:100%;padding:12px;background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--wh);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:4px;transition:all .3s;}
-.pkbtn:hover{background:var(--o);color:var(--dk);border-color:var(--o);}
-.process{padding:120px 48px;display:grid;grid-template-columns:1fr 2fr;gap:80px;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
-.prl{position:sticky;top:120px;align-self:start;}
-.prtag{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--o);margin-bottom:20px;display:block;}
-.prtit{font-family:var(--display);font-weight:800;font-size:clamp(2.5rem,4vw,4.5rem);line-height:.9;letter-spacing:-.04em;margin-bottom:24px;}
-.prtit em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--o);}
-.prsub{font-size:.9rem;line-height:1.75;color:var(--mu);}
-.prsteps{display:flex;flex-direction:column;}
-.prstep{display:flex;gap:32px;padding:48px 0;border-bottom:1px solid rgba(255,255,255,.06);}
-.prstep:last-child{border-bottom:none;}
-.prn{font-family:var(--display);font-weight:800;font-size:4rem;color:var(--o);opacity:.18;line-height:1;flex-shrink:0;width:80px;text-align:right;transition:opacity .3s;}
-.prstep:hover .prn{opacity:.65;}
-.prc h3{font-family:var(--display);font-weight:700;font-size:1.4rem;margin-bottom:12px;}
-.prc p{font-size:.9rem;line-height:1.8;color:var(--mu);}
-.portfolio{padding:120px 0 0;}
-.ph{padding:0 48px 60px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:32px;}
-.ptag{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--o);margin-bottom:16px;display:block;}
-.ptit{font-family:var(--display);font-weight:800;font-size:clamp(2.5rem,5vw,5.5rem);line-height:.9;letter-spacing:-.04em;}
-.ptit em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--o);}
-.pfilters{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:4px;}
-.flt{background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--mu);font-family:var(--display);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:10px 20px;border-radius:100px;transition:all .3s;}
-.flt:hover,.flt.on{background:var(--o);color:var(--dk);border-color:var(--o);}
-.fstrip{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding:0 48px 60px;cursor:grab;-webkit-overflow-scrolling:touch;}
-.fstrip::-webkit-scrollbar{display:none;}
-.fstrip.grab{cursor:grabbing;}
-.frow{display:flex;gap:12px;width:max-content;align-items:flex-end;}
-.fc{position:relative;overflow:hidden;border-radius:8px;flex-shrink:0;transition:transform .4s cubic-bezier(.25,.46,.45,.94);}
-.fc img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.46,.45,.94),filter .4s;}
-.fc:hover img{transform:scale(1.07);filter:brightness(.75);}
-.fco{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.85) 0%,transparent 55%);opacity:0;transition:opacity .4s;display:flex;align-items:flex-end;padding:20px;}
-.fc:hover .fco{opacity:1;}
-.fcm{display:flex;align-items:center;justify-content:space-between;width:100%;}
-.fccat{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--o);}
-.fczm{width:32px;height:32px;background:var(--o);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--dk);}
-.fc-sm{width:240px;height:300px;}
-.fc-md{width:300px;height:400px;}
-.fc-lg{width:380px;height:480px;}
-.fc-tl{width:260px;height:500px;}
-.fc-wd{width:480px;height:320px;}
-.fprog{padding:0 48px 80px;display:flex;align-items:center;gap:16px;margin-top:16px;}
-.fpt{flex:1;height:1px;background:rgba(255,255,255,.1);position:relative;overflow:hidden;}
-.fpf{height:100%;background:var(--o);width:0%;transition:width .1s;}
-.fpi{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--mu);white-space:nowrap;}
-.fpbtns{display:flex;gap:8px;}
-.fpb{width:36px;height:36px;background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--wh);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .3s;}
-.fpb:hover{background:var(--o);border-color:var(--o);color:var(--dk);}
-#lb{position:fixed;inset:0;background:rgba(5,5,5,.97);z-index:50000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .4s;}
-#lb.on{opacity:1;pointer-events:all;}
-#lb img{max-width:88vw;max-height:88vh;object-fit:contain;border-radius:4px;animation:lbin .4s cubic-bezier(.25,.46,.45,.94);}
-@keyframes lbin{from{transform:scale(.9);opacity:0;}to{transform:scale(1);opacity:1;}}
-.lbx{position:fixed;top:20px;right:28px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--wh);width:44px;height:44px;border-radius:50%;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all .3s;}
-.lbx:hover{background:var(--o);border-color:var(--o);color:var(--dk);}
-.lbn{position:fixed;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--wh);width:52px;height:52px;border-radius:50%;font-size:1.4rem;display:flex;align-items:center;justify-content:center;transition:all .3s;}
-.lbn:hover{background:var(--o);border-color:var(--o);color:var(--dk);}
-.lbp{left:20px;}
-.lbnx{right:20px;}
-.lbc{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mu);}
-.contact{padding:120px 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;background:var(--dk2);border-top:1px solid rgba(255,255,255,.06);}
-.ctag{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--o);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
-.ctag::before{content:'';width:24px;height:1px;background:var(--o);}
-.ctit{font-family:var(--display);font-weight:800;font-size:clamp(2.5rem,4vw,5rem);line-height:.9;letter-spacing:-.04em;margin-bottom:32px;}
-.ctit em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--o);}
-.csub{font-size:.95rem;line-height:1.8;color:var(--mu);margin-bottom:48px;}
-.clinks{display:flex;flex-direction:column;}
-.clink{display:flex;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.06);color:var(--mu);font-size:.9rem;transition:color .3s;}
-.clink i{color:var(--o);width:16px;font-size:.9rem;}
-.clink:hover{color:var(--wh);}
-.fbox{background:var(--dk3);border:1px solid rgba(255,255,255,.07);padding:40px;}
-.fbox h3{font-family:var(--display);font-weight:700;font-size:1.6rem;margin-bottom:28px;}
-.fg{margin-bottom:14px;}
-.fi{width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--wh);font-family:var(--display);font-size:.9rem;border-radius:4px;outline:none;transition:border-color .3s;appearance:none;}
-.fi:focus{border-color:var(--o);}
-.fi option{background:var(--dk3);}
-.fita{resize:vertical;min-height:90px;}
-.sbtn{width:100%;padding:15px;background:var(--o);border:none;color:var(--dk);font-family:var(--display);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border-radius:4px;transition:all .3s;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:6px;}
-.sbtn:hover{background:var(--o2);transform:translateY(-2px);}
-.fok{display:none;margin-top:14px;padding:14px;background:rgba(255,90,31,.08);border:1px solid rgba(255,90,31,.25);color:var(--o);font-size:.85rem;text-align:center;border-radius:4px;}
-footer{padding:40px 48px;background:var(--dk);border-top:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:space-between;gap:20px;}
-.flogo{font-family:var(--display);font-weight:800;font-size:.95rem;letter-spacing:-.02em;}
-.flogo em{color:var(--o);font-style:normal;}
-.fcpy{font-size:11px;letter-spacing:.06em;color:var(--mu);}
-.fsoc{display:flex;gap:14px;}
-.fsoc a{color:var(--mu);font-size:.9rem;transition:color .3s;}
-.fsoc a:hover{color:var(--o);}
-#mw{position:fixed;inset:0;background:rgba(5,5,5,.85);backdrop-filter:blur(12px);z-index:60000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;}
-#mw.on{opacity:1;pointer-events:all;}
-.modal{background:var(--dk2);border:1px solid rgba(255,255,255,.08);padding:48px;max-width:440px;width:90%;position:relative;transform:translateY(24px);transition:transform .4s cubic-bezier(.25,.46,.45,.94);}
-#mw.on .modal{transform:translateY(0);}
-.mx{position:absolute;top:16px;right:16px;background:none;border:none;color:var(--mu);font-size:1.4rem;transition:color .3s;}
-.mx:hover{color:var(--o);}
-.modal h3{font-family:var(--display);font-weight:800;font-size:1.6rem;margin-bottom:8px;}
-.modal h3 span{color:var(--o);}
-.modal p{font-size:.85rem;color:var(--mu);margin-bottom:24px;}
-#toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(70px);background:var(--o);color:var(--dk);padding:12px 28px;font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.08em;z-index:70000;border-radius:100px;pointer-events:none;transition:transform .4s cubic-bezier(.25,.46,.45,.94);}
-#toast.on{transform:translateX(-50%) translateY(0);}
-.rv{opacity:0;transform:translateY(32px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
-.rv.vis{opacity:1;transform:translateY(0);}
-@media(max-width:1100px){.pkgs{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:900px){
-  header{padding:0 24px;}
-  nav,.hb{display:none;}
-  .hmb{display:block;}
-  .hero{grid-template-columns:1fr;min-height:auto;}
-  .hrgt{height:65vw;max-height:500px;}
-  .hlft{padding:80px 24px 140px;}
-  .hrgt::after{background:linear-gradient(to top,var(--dk) 0%,transparent 60%);}
-  .about,.process,.contact{grid-template-columns:1fr;gap:48px;padding:80px 24px;}
-  .svcs{padding:80px 24px;}
-  .pkgs{grid-template-columns:1fr;}
-  .portfolio{padding:80px 0 0;}
-  .ph{flex-direction:column;align-items:flex-start;padding:0 24px 40px;}
-  .fstrip,.fprog{padding-left:24px;padding-right:24px;}
-  footer{flex-direction:column;text-align:center;padding:32px 24px;}
-  .hstats{flex-wrap:wrap;}
+
+/* ═══════════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════════ */
+:root {
+  --noir:   #070707;
+  --noir2:  #0E0E0E;
+  --noir3:  #161616;
+  --creme:  #F0EDE8;
+  --creme2: #D5D1CB;
+  --or:     #B8820A;
+  --or2:    #C8920A;
+  --or-a:   rgba(184,130,10,.14);
+  --or-b:   rgba(184,130,10,.32);
+  --mu:     rgba(240,237,232,.40);
+  --mu2:    rgba(240,237,232,.20);
+  --bd:     rgba(240,237,232,.08);
+  --bd2:    rgba(240,237,232,.04);
+  --serif:  'Cormorant Garamond', Georgia, serif;
+  --sans:   'Inter', Helvetica Neue, sans-serif;
+  --pad:    clamp(22px, 4.5vw, 60px);
+  --ease:   cubic-bezier(.25,.46,.45,.94);
 }
-@media(max-width:600px){.htitle{font-size:4rem;}.hstats{display:none;}}
+
+/* ═══════════════════════════════════════════════
+   BASE
+═══════════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{
+  background:var(--noir);color:var(--creme);
+  font-family:var(--sans);font-weight:300;
+  line-height:1.6;overflow-x:hidden;
+  cursor:none;-webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit;}
+img{display:block;max-width:100%;}
+button{font-family:var(--sans);cursor:none;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+
+/* ═══════════════════════════════════════════════
+   CURSEUR
+═══════════════════════════════════════════════ */
+#c-d{width:5px;height:5px;background:var(--or2);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:opacity .18s;}
+#c-r{width:30px;height:30px;border:1px solid var(--or-b);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .2s var(--ease),height .2s var(--ease),border-color .2s;}
+body.hov #c-r{width:46px;height:46px;border-color:var(--or2);}
+body.hov #c-d{opacity:0;}
+
+/* ═══════════════════════════════════════════════
+   NAVBAR
+═══════════════════════════════════════════════ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  height:62px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 var(--pad);
+  border-bottom:1px solid transparent;
+  transition:background .4s var(--ease),border-color .4s var(--ease),backdrop-filter .4s;
+}
+.nav.scrolled{
+  background:rgba(7,7,7,.96);
+  backdrop-filter:blur(22px) saturate(1.5);
+  border-color:var(--bd);
+}
+.nav-logo{display:flex;align-items:center;gap:13px;}
+.nav-wordmark{font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;}
+.nav-wordmark em{color:var(--or2);font-style:normal;}
+.nav-links{display:flex;gap:34px;}
+.nav-links a{
+  font-size:10px;font-weight:300;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--mu);position:relative;transition:color .2s;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-5px;left:0;right:0;height:1px;
+  background:var(--or2);transform:scaleX(0);transform-origin:right;
+  transition:transform .35s var(--ease);
+}
+.nav-links a:hover{color:var(--creme);}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left;}
+.nav-cta{
+  font-size:10px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;
+  padding:9px 22px;border:1px solid var(--or-b);color:var(--or2);background:var(--or-a);
+  border-radius:1px;transition:background .22s,border-color .22s,color .22s;
+}
+.nav-cta:hover{background:var(--or2);color:var(--noir);border-color:var(--or2);}
+.nav-mob-btn{display:none;font-size:18px;padding:8px;color:var(--creme);}
+
+/* ═══════════════════════════════════════════════
+   MOBILE NAV
+═══════════════════════════════════════════════ */
+.mob-nav{
+  position:fixed;inset:0;background:var(--noir2);z-index:490;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s;
+}
+.mob-nav.open{opacity:1;visibility:visible;}
+.mob-nav a{
+  font-family:var(--serif);font-style:italic;font-size:clamp(3rem,12vw,5.5rem);
+  color:var(--creme);transition:color .2s;text-align:center;display:block;padding:4px 0;
+}
+.mob-nav a:hover{color:var(--or2);}
+.mob-close{position:absolute;top:20px;right:var(--pad);font-size:22px;color:var(--mu);}
+
+/* ═══════════════════════════════════════════════
+   HERO — éditorial, pleine hauteur
+═══════════════════════════════════════════════ */
+.hero{
+  min-height:100vh;padding-top:62px;
+  display:grid;grid-template-columns:52% 48%;
+  border-bottom:1px solid var(--bd);
+  overflow:hidden;
+}
+
+/* GAUCHE — texte éditorial */
+.hero-txt{
+  padding:clamp(52px,7vw,100px) var(--pad) clamp(72px,8vw,120px);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  border-right:1px solid var(--bd);position:relative;
+}
+/* grain texture subtil */
+.hero-txt::before{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:.02;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.hero-eyebrow{
+  font-size:10px;font-weight:300;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--or2);margin-bottom:clamp(32px,4vw,56px);
+  display:flex;align-items:center;gap:14px;position:relative;z-index:1;
+}
+.hero-eyebrow::before{content:'';width:26px;height:1px;background:var(--or2);flex-shrink:0;}
+
+.hero-h1{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(4.8rem,9.5vw,10rem);line-height:.84;letter-spacing:-.02em;
+  margin-bottom:clamp(28px,3.5vw,48px);position:relative;z-index:1;
+}
+.hero-h1 strong{
+  font-family:var(--sans);font-style:normal;font-weight:200;
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--mu);display:block;margin-bottom:22px;
+}
+
+.hero-desc{
+  font-size:clamp(13px,1.05vw,14px);line-height:1.9;color:var(--mu);
+  max-width:340px;margin-bottom:clamp(40px,4.5vw,64px);position:relative;z-index:1;
+}
+
+.hero-btns{display:flex;align-items:center;gap:22px;flex-wrap:wrap;position:relative;z-index:1;}
+.btn-fill{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--or2);color:var(--noir);
+  font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  padding:14px 30px;border-radius:1px;transition:opacity .2s,transform .22s var(--ease);
+}
+.btn-fill:hover{opacity:.82;transform:translateY(-2px);}
+.btn-line{
+  font-size:10px;font-weight:300;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--mu);border-bottom:1px solid var(--bd);padding-bottom:3px;
+  transition:color .2s,border-color .2s;
+}
+.btn-line:hover{color:var(--creme);border-color:var(--creme2);}
+
+/* DROITE — photo éditoriale */
+.hero-img-wrap{position:relative;overflow:hidden;}
+.hero-photo{
+  width:100%;height:100%;object-fit:cover;object-position:top center;
+  filter:brightness(.78) contrast(1.1) saturate(.88);
+  transition:transform 9s var(--ease);
+}
+.hero-img-wrap:hover .hero-photo{transform:scale(1.04);}
+.hero-gradient{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(108deg,var(--noir) 0%,rgba(7,7,7,.32) 36%,transparent 60%),
+    linear-gradient(to top,rgba(7,7,7,.82) 0%,transparent 44%);
+}
+/* Monogramme watermark en filigrane */
+.hero-wm{position:absolute;top:clamp(24px,3vw,48px);right:clamp(24px,3vw,48px);z-index:2;opacity:.09;}
+
+/* STATS strip glass */
+.stat-strip{
+  position:absolute;bottom:0;left:0;right:0;z-index:3;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  background:rgba(9,9,9,.66);
+  backdrop-filter:blur(18px) saturate(1.4);
+  border-top:1px solid var(--bd);
+}
+.stat{padding:18px 20px;border-right:1px solid var(--bd);}
+.stat:last-child{border-right:none;}
+.stat-n{font-size:26px;font-weight:200;line-height:1;}
+.stat-l{font-size:9px;font-weight:300;letter-spacing:.2em;text-transform:uppercase;color:var(--mu);margin-top:5px;}
+
+/* ═══════════════════════════════════════════════
+   DIVIDERS
+═══════════════════════════════════════════════ */
+.div-gold{height:1px;background:linear-gradient(90deg,transparent,var(--or-b) 28%,var(--or-b) 72%,transparent);}
+.div-thin{height:1px;background:var(--bd);}
+
+/* ═══════════════════════════════════════════════
+   TICKER
+═══════════════════════════════════════════════ */
+.ticker{overflow:hidden;border-bottom:1px solid var(--bd);padding:12px 0;}
+.ticker-track{display:flex;width:max-content;animation:atick 26s linear infinite;}
+.ticker-item{font-size:10px;font-weight:300;letter-spacing:.28em;text-transform:uppercase;color:var(--mu2);padding:0 40px;white-space:nowrap;}
+.ticker-dot{color:var(--or2);margin-right:12px;font-size:7px;vertical-align:middle;}
+@keyframes atick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ═══════════════════════════════════════════════
+   SECTION LABELS COMMUNS
+═══════════════════════════════════════════════ */
+.sec-label{
+  font-size:10px;font-weight:300;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--or2);display:flex;align-items:center;gap:14px;
+}
+.sec-label::before{content:'';width:26px;height:1px;background:var(--or2);flex-shrink:0;}
+.sec-title{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(2.8rem,5vw,5.6rem);line-height:.88;letter-spacing:-.01em;
+}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .75s var(--ease),transform .75s var(--ease);}
+.rv.vis{opacity:1;transform:none;}
+
+/* ═══════════════════════════════════════════════
+   À PROPOS — manifeste éditorial
+═══════════════════════════════════════════════ */
+.about{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:1px solid var(--bd);
+}
+.about-left{
+  padding:clamp(60px,8vw,120px) var(--pad);
+  border-right:1px solid var(--bd);
+  display:flex;flex-direction:column;gap:clamp(40px,5vw,64px);
+}
+.about-manifeste{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(1.5rem,2.4vw,2.2rem);line-height:1.45;
+  color:var(--creme2);letter-spacing:.01em;
+}
+.about-manifeste strong{
+  font-style:normal;font-family:var(--serif);
+  font-size:clamp(2rem,3.2vw,3rem);font-weight:300;
+  color:var(--creme);display:block;margin-bottom:20px;
+  letter-spacing:-.01em;
+}
+.about-body{
+  font-size:13px;font-weight:300;line-height:2;color:var(--mu);
+  max-width:420px;
+}
+.about-body p+p{margin-top:20px;}
+.about-signature{
+  font-family:var(--serif);font-style:italic;font-size:1.1rem;
+  color:var(--or2);letter-spacing:.04em;
+  padding-top:32px;border-top:1px solid var(--bd);
+}
+.about-right{display:flex;flex-direction:column;}
+.about-img-wrap{flex:1;overflow:hidden;position:relative;}
+.about-photo{
+  width:100%;height:100%;object-fit:cover;object-position:top;
+  min-height:420px;
+  filter:brightness(.76) contrast(1.08) saturate(.82);
+  transition:transform .8s var(--ease);
+}
+.about-img-wrap:hover .about-photo{transform:scale(1.03);}
+.about-badge{
+  padding:26px var(--pad);border-top:1px solid var(--bd);
+  display:flex;align-items:center;gap:24px;background:var(--noir2);
+}
+.badge-n{font-size:48px;font-weight:200;color:var(--or2);line-height:1;}
+.badge-l{font-size:10px;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--mu);line-height:1.85;}
+
+/* ═══════════════════════════════════════════════
+   COLLECTION — éditorial, grandes cartes + slider
+═══════════════════════════════════════════════ */
+.collection{border-bottom:1px solid var(--bd);}
+.coll-header{
+  padding:clamp(48px,6vw,80px) var(--pad) clamp(36px,4vw,52px);
+  display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--bd);flex-wrap:wrap;gap:24px;
+}
+.coll-desc{font-size:13px;font-weight:300;color:var(--mu);line-height:1.85;max-width:260px;text-align:right;}
+
+/* GRILLE ÉDITORIALE — 4 grandes cartes, ratio 3:4 */
+.prod-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;background:var(--bd);
+}
+.prod-card{
+  background:var(--noir);position:relative;overflow:hidden;
+  cursor:none;
+}
+/* ratio 3:4 — plus grand, plus impactant */
+.prod-img{position:relative;padding-bottom:133%;overflow:hidden;}
+.prod-img img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center top;
+  filter:brightness(.82) saturate(.9) contrast(1.04);
+  transition:transform .85s var(--ease),filter .5s;
+}
+.prod-card:hover .prod-img img{
+  transform:scale(1.06);
+  filter:brightness(.55) saturate(.88) contrast(1.07);
+}
+/* overlay toujours visible en bas (titre permanent) */
+.prod-ovl{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,
+    rgba(4,4,4,.92) 0%,
+    rgba(4,4,4,.38) 30%,
+    transparent 62%
+  );
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:22px 20px 20px;
+  transition:background .4s var(--ease);
+}
+.prod-card:hover .prod-ovl{
+  background:linear-gradient(to top,
+    rgba(4,4,4,.96) 0%,
+    rgba(4,4,4,.55) 38%,
+    rgba(4,4,4,.12) 72%,
+    transparent 100%
+  );
+}
+/* badge catégorie — toujours visible */
+.prod-cat{
+  font-size:9px;font-weight:400;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--or2);margin-bottom:8px;
+  opacity:.85;
+}
+/* titre principal — toujours visible */
+.prod-name{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(1.25rem,1.8vw,1.55rem);line-height:1.18;
+  color:var(--creme);margin-bottom:4px;
+  letter-spacing:.01em;
+}
+/* sous-titre — toujours visible */
+.prod-type{
+  font-size:9px;font-weight:300;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(240,237,232,.48);
+}
+/* bouton "Agrandir" — apparaît au hover */
+.prod-action{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:9px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--creme);border:1px solid rgba(240,237,232,.22);
+  padding:8px 14px;border-radius:1px;width:fit-content;
+  margin-top:14px;
+  opacity:0;transform:translateY(6px);
+  transition:opacity .3s var(--ease),transform .3s var(--ease),background .2s,border-color .2s,color .2s;
+}
+.prod-card:hover .prod-action{opacity:1;transform:translateY(0);}
+.prod-action:hover{background:var(--or2);border-color:var(--or2);color:var(--noir);}
+
+/* ── SLIDER CINÉMATIQUE (2ème rangée) ─────────── */
+.coll-slider{
+  position:relative;overflow:hidden;
+  border-top:1px solid var(--bd);
+  background:var(--noir2);
+}
+.coll-slides{display:flex;transition:transform .72s var(--ease);}
+.coll-slide{
+  min-width:100%;display:grid;
+  grid-template-columns:42% 1fr 1fr;
+  height:clamp(320px,36vw,480px);
+  flex-shrink:0;
+}
+.csl-main{
+  position:relative;overflow:hidden;
+  border-right:1px solid var(--bd);
+}
+.csl-main img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  filter:brightness(.74) saturate(.85) contrast(1.06);
+  transition:transform .9s var(--ease);
+}
+.csl-main:hover img{transform:scale(1.04);}
+.csl-main-ovl{
+  position:absolute;inset:0;
+  background:linear-gradient(120deg,rgba(4,4,4,.82) 0%,transparent 55%),
+             linear-gradient(to top,rgba(4,4,4,.78) 0%,transparent 48%);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(20px,2.5vw,36px);
+}
+.csl-badge{
+  font-size:8px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--or2);margin-bottom:10px;
+  display:flex;align-items:center;gap:10px;
+}
+.csl-badge::before{content:'';width:18px;height:1px;background:var(--or2);}
+.csl-title{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(1.6rem,2.8vw,2.4rem);line-height:1.12;
+  color:var(--creme);margin-bottom:8px;
+}
+.csl-sub{font-size:11px;font-weight:300;color:var(--mu);line-height:1.7;max-width:260px;margin-bottom:18px;}
+.csl-count{font-size:9px;font-weight:300;letter-spacing:.16em;text-transform:uppercase;color:var(--mu2);}
+.csl-thumb{
+  position:relative;overflow:hidden;border-right:1px solid var(--bd);
+  cursor:none;
+}
+.csl-thumb:last-child{border-right:none;}
+.csl-thumb img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  filter:brightness(.68) saturate(.82);
+  transition:transform .75s var(--ease),filter .35s;
+}
+.csl-thumb:hover img{transform:scale(1.07);filter:brightness(.5) saturate(.85);}
+.csl-thumb-ovl{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(4,4,4,.88) 0%,transparent 52%);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:16px;
+}
+.csl-thumb-cat{font-size:8px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--or2);margin-bottom:5px;}
+.csl-thumb-name{
+  font-family:var(--serif);font-style:italic;font-size:clamp(.95rem,1.4vw,1.15rem);
+  color:var(--creme);line-height:1.2;
+}
+
+/* navigation slider */
+.coll-slider-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  display:flex;align-items:center;justify-content:space-between;
+  left:0;right:0;padding:0 16px;pointer-events:none;z-index:10;
+}
+.csl-btn{
+  width:38px;height:38px;border:1px solid var(--bd);
+  background:rgba(7,7,7,.72);backdrop-filter:blur(8px);
+  color:var(--mu);display:flex;align-items:center;justify-content:center;
+  font-size:13px;border-radius:1px;pointer-events:all;
+  transition:border-color .22s,color .22s,background .22s;
+}
+.csl-btn:hover{border-color:var(--or-b);color:var(--or2);background:rgba(7,7,7,.88);}
+/* dots */
+.csl-dots{
+  display:flex;gap:8px;justify-content:center;
+  padding:14px 0 18px;border-top:1px solid var(--bd);
+}
+.csl-dot{
+  width:22px;height:2px;background:var(--bd);border:none;
+  border-radius:1px;transition:background .28s,width .28s;
+}
+.csl-dot.on{background:var(--or2);width:38px;}
+
+/* ═══════════════════════════════════════════════
+   PACKAGES
+═══════════════════════════════════════════════ */
+.pkgs{border-bottom:1px solid var(--bd);}
+.pkgs-head{
+  padding:clamp(48px,6vw,80px) var(--pad) clamp(36px,4vw,52px);
+  display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--bd);flex-wrap:wrap;gap:24px;
+}
+.pkgs-note{font-size:13px;font-weight:300;color:var(--mu);line-height:1.85;max-width:240px;text-align:right;}
+.pkg-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+.pkg{
+  padding:clamp(28px,3vw,44px) clamp(20px,2.5vw,34px);
+  border-right:1px solid var(--bd);position:relative;overflow:hidden;
+  transition:background .3s var(--ease);
+}
+.pkg:last-child{border-right:none;}
+.pkg:hover{background:rgba(184,130,10,.04);}
+.pkg::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--or2),transparent);
+  transform:scaleX(0);transform-origin:right;
+  transition:transform .42s var(--ease);
+}
+.pkg:hover::before{transform:scaleX(1);transform-origin:left;}
+.pkg-ft{background:rgba(184,130,10,.05);border-right:1px solid rgba(184,130,10,.18)!important;}
+.pkg-ft::before{transform:scaleX(1);opacity:.65;}
+.pkg-lbl{font-size:9px;font-weight:300;letter-spacing:.26em;text-transform:uppercase;color:var(--mu);margin-bottom:10px;}
+.pkg-badge{display:inline-block;font-size:8px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;background:var(--or2);color:var(--noir);padding:3px 10px;border-radius:1px;margin-bottom:14px;}
+.pkg-price{font-size:clamp(38px,4vw,54px);font-weight:200;line-height:1;letter-spacing:-.02em;}
+.pkg-price sup{font-size:17px;vertical-align:top;margin-top:11px;display:inline-block;color:var(--mu);font-weight:300;}
+.pkg-div{height:1px;background:var(--bd);margin:24px 0;}
+.pkg-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.pkg-feats li{font-size:12px;font-weight:300;color:var(--mu);display:flex;align-items:center;gap:10px;}
+.pkg-feats li::before{content:'';width:14px;height:1px;background:var(--or2);flex-shrink:0;}
+.pkg-ft .pkg-feats li{color:rgba(240,237,232,.58);}
+.pkg-btn{
+  width:100%;padding:12px;border:1px solid var(--bd);
+  font-size:10px;font-weight:300;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--mu);border-radius:1px;transition:all .22s;
+}
+.pkg-btn:hover,.pkg-ft .pkg-btn{border-color:var(--or-b);color:var(--or2);}
+.pkg-ft .pkg-btn:hover{background:var(--or2);color:var(--noir);border-color:var(--or2);}
+
+/* ═══════════════════════════════════════════════
+   PROCESSUS
+═══════════════════════════════════════════════ */
+.process{display:grid;grid-template-columns:1fr 2fr;border-bottom:1px solid var(--bd);}
+.proc-left{padding:clamp(56px,7vw,96px) var(--pad);border-right:1px solid var(--bd);position:sticky;top:62px;align-self:start;}
+.proc-left .sec-label{margin-bottom:28px;}
+.proc-left .sec-title{margin-bottom:24px;}
+.proc-sub{font-size:13px;font-weight:300;color:var(--mu);line-height:1.85;}
+.proc-steps{display:flex;flex-direction:column;}
+.proc-step{
+  display:grid;grid-template-columns:76px 1fr;gap:26px;
+  padding:clamp(36px,4vw,52px) var(--pad);border-bottom:1px solid var(--bd);
+  transition:background .2s;
+}
+.proc-step:last-child{border-bottom:none;}
+.proc-step:hover{background:rgba(255,255,255,.01);}
+.step-num{font-size:48px;font-weight:200;line-height:1;color:rgba(240,237,232,.1);transition:color .38s var(--ease);}
+.proc-step:hover .step-num{color:rgba(184,130,10,.48);}
+.step-body h3{font-size:14px;font-weight:400;margin-bottom:10px;}
+.step-body p{font-size:12px;font-weight:300;color:var(--mu);line-height:1.85;}
+
+/* ═══════════════════════════════════════════════
+   PORTFOLIO — film strip
+═══════════════════════════════════════════════ */
+.port{border-bottom:1px solid var(--bd);}
+.port-head{
+  padding:clamp(48px,6vw,80px) var(--pad) clamp(36px,4vw,52px);
+  display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--bd);flex-wrap:wrap;gap:24px;
+}
+.port-filters{display:flex;gap:4px;}
+.pflt{font-size:10px;font-weight:300;letter-spacing:.16em;text-transform:uppercase;padding:7px 16px;border:1px solid transparent;color:var(--mu);border-radius:1px;transition:all .2s;}
+.pflt.on{border-color:var(--or-b);color:var(--or2);background:var(--or-a);}
+.pflt:hover:not(.on){border-color:var(--bd);color:rgba(240,237,232,.58);}
+.strip{padding:28px var(--pad) 0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;cursor:grab;}
+.strip::-webkit-scrollbar{display:none;}
+.strip.drag{cursor:grabbing;}
+.strip-row{display:flex;gap:8px;width:max-content;align-items:flex-end;}
+.sc{position:relative;overflow:hidden;border-radius:1px;flex-shrink:0;}
+.sc img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.76) saturate(.85);transition:transform .75s var(--ease),filter .35s;}
+.sc:hover img{transform:scale(1.06);filter:brightness(.58) saturate(.88);}
+.sc-ovl{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(7,7,7,.84) 0%,transparent 52%);
+  opacity:0;transition:opacity .35s var(--ease);
+  display:flex;align-items:flex-end;justify-content:space-between;padding:14px;
+}
+.sc:hover .sc-ovl{opacity:1;}
+.sc-cat{font-size:9px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--or2);}
+.sc-zoom{width:28px;height:28px;border:1px solid var(--or-b);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--or2);}
+.strip-nav{padding:14px var(--pad) 36px;display:flex;align-items:center;gap:14px;border-top:1px solid var(--bd);margin-top:20px;}
+.prog{flex:1;height:1px;background:var(--bd);}
+.prog-f{height:100%;background:var(--or2);width:0%;transition:width .1s;}
+.prog-lbl{font-size:9px;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--mu2);white-space:nowrap;}
+.strip-btn{width:32px;height:32px;border:1px solid var(--bd);color:var(--mu);display:flex;align-items:center;justify-content:center;font-size:11px;border-radius:1px;transition:all .22s;}
+.strip-btn:hover{border-color:var(--or-b);color:var(--or2);}
+
+/* ═══════════════════════════════════════════════
+   LIGHTBOX
+═══════════════════════════════════════════════ */
+.lb{position:fixed;inset:0;z-index:800;background:rgba(5,5,5,.97);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .32s var(--ease);}
+.lb.open{opacity:1;pointer-events:all;}
+.lb img{max-width:88vw;max-height:86vh;object-fit:contain;}
+.lb-x{position:fixed;top:20px;right:24px;width:40px;height:40px;border:1px solid var(--bd);color:var(--mu);display:flex;align-items:center;justify-content:center;font-size:16px;border-radius:1px;transition:all .2s;}
+.lb-x:hover{border-color:var(--or-b);color:var(--or2);}
+.lb-arr{position:fixed;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid var(--bd);color:var(--mu);display:flex;align-items:center;justify-content:center;font-size:18px;border-radius:1px;transition:all .2s;}
+.lb-arr:hover{border-color:var(--or-b);color:var(--or2);}
+.lb-p{left:20px;}.lb-n{right:20px;}
+.lb-ctr{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:300;letter-spacing:.22em;text-transform:uppercase;color:var(--mu2);}
+
+/* ═══════════════════════════════════════════════
+   CONTACT — formulaire professionnel
+═══════════════════════════════════════════════ */
+.contact{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--bd);}
+.cont-left{padding:clamp(56px,7vw,96px) var(--pad);border-right:1px solid var(--bd);}
+.cont-left .sec-label{margin-bottom:28px;}
+.cont-left .sec-title{margin-bottom:24px;}
+.cont-desc{font-size:14px;font-weight:300;color:var(--mu);line-height:1.9;margin-bottom:48px;max-width:380px;}
+.cont-links{display:flex;flex-direction:column;}
+.cont-link{display:flex;align-items:center;gap:16px;padding:18px 0;border-top:1px solid var(--bd);font-size:12px;font-weight:300;color:var(--mu);transition:color .2s;}
+.cont-link i{color:var(--or2);font-size:13px;width:16px;}
+.cont-link:hover{color:var(--creme);}
+.cont-right{padding:clamp(56px,7vw,96px) var(--pad);}
+.form-title{font-size:15px;font-weight:400;margin-bottom:36px;letter-spacing:.02em;}
+
+/* FORM — minimaliste, bordures fines */
+.form-field{margin-bottom:14px;position:relative;}
+.form-label{
+  display:block;font-size:9px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--or2);margin-bottom:8px;
+}
+.form-input{
+  width:100%;background:transparent;
+  border:none;border-bottom:1px solid var(--bd);
+  color:var(--creme);font-family:var(--sans);font-size:13px;font-weight:300;
+  padding:12px 0;outline:none;
+  transition:border-color .22s var(--ease);
+  appearance:none;
+}
+.form-input::placeholder{color:var(--mu2);}
+.form-input:focus{border-color:var(--or2);}
+.form-input option{background:#111;}
+.form-textarea{resize:none;min-height:90px;line-height:1.7;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.form-submit{
+  width:100%;padding:16px;margin-top:28px;
+  background:var(--or2);color:var(--noir);
+  font-family:var(--sans);font-size:10px;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;
+  border:none;border-radius:1px;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:opacity .2s,transform .22s var(--ease);
+}
+.form-submit:hover{opacity:.84;transform:translateY(-2px);}
+.form-ok{
+  display:none;margin-top:16px;padding:15px;
+  border:1px solid var(--or-b);color:var(--or2);
+  font-size:12px;font-weight:300;text-align:center;border-radius:1px;
+}
+
+/* ═══════════════════════════════════════════════
+   MODAL
+═══════════════════════════════════════════════ */
+.modal-bg{
+  position:fixed;inset:0;z-index:700;
+  background:rgba(5,5,5,.88);backdrop-filter:blur(10px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .32s var(--ease);
+}
+.modal-bg.open{opacity:1;pointer-events:all;}
+.modal-box{
+  background:var(--noir2);border:1px solid var(--bd);
+  padding:clamp(32px,4vw,52px);max-width:440px;width:90%;
+  position:relative;transform:translateY(18px);
+  transition:transform .38s var(--ease);
+}
+.modal-bg.open .modal-box{transform:none;}
+.modal-x{position:absolute;top:14px;right:14px;color:var(--mu);font-size:20px;transition:color .2s;}
+.modal-x:hover{color:var(--or2);}
+.modal-box h3{font-size:20px;font-weight:400;margin-bottom:8px;}
+.modal-box h3 em{color:var(--or2);font-style:normal;}
+.modal-box p{font-size:12px;color:var(--mu);margin-bottom:24px;font-weight:300;}
+
+/* ═══════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════ */
+.foot-top{display:grid;grid-template-columns:1.3fr 1fr 1fr;padding:clamp(40px,5vw,64px) var(--pad);border-bottom:1px solid var(--bd);gap:40px;}
+.foot-brand{display:flex;flex-direction:column;gap:18px;}
+.foot-logo{display:flex;align-items:center;gap:12px;}
+.foot-wm{font-size:11px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;}
+.foot-wm em{color:var(--or2);font-style:normal;}
+.foot-tag{font-size:12px;font-weight:300;color:var(--mu);line-height:1.85;max-width:260px;}
+.foot-soc{display:flex;gap:18px;}
+.foot-soc a{font-size:14px;color:var(--mu);transition:color .2s;}
+.foot-soc a:hover{color:var(--or2);}
+.foot-col h5{font-size:9px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--or2);margin-bottom:18px;}
+.foot-col a{display:block;font-size:12px;font-weight:300;color:var(--mu);margin-bottom:11px;transition:color .2s;}
+.foot-col a:hover{color:var(--creme);}
+.foot-loc{color:var(--or2)!important;margin-top:6px;}
+.foot-bot{padding:20px var(--pad);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.foot-copy{font-size:10px;font-weight:300;color:var(--mu2);letter-spacing:.06em;}
+
+/* ═══════════════════════════════════════════════
+   TOAST
+═══════════════════════════════════════════════ */
+.toast{
+  position:fixed;bottom:24px;left:50%;
+  transform:translateX(-50%) translateY(58px);
+  background:var(--or2);color:var(--noir);
+  padding:11px 26px;font-size:11px;font-weight:500;letter-spacing:.1em;
+  border-radius:1px;z-index:900;pointer-events:none;
+  transition:transform .36s var(--ease);
+}
+.toast.show{transform:translateX(-50%) translateY(0);}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════ */
+@media(max-width:1200px){
+  .prod-grid{grid-template-columns:repeat(3,1fr);}
+  .pkg-grid{grid-template-columns:repeat(2,1fr);}
+  .pkg:nth-child(2){border-right:none;}
+  .pkg:nth-child(3){border-top:1px solid var(--bd);}
+}
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none;}
+  .nav-mob-btn{display:block;}
+  .nav{height:56px;}
+  .hero{grid-template-columns:1fr;min-height:auto;}
+  .hero-txt{padding:clamp(48px,8vw,80px) var(--pad) 100px;border-right:none;}
+  .hero-img-wrap{height:70vw;max-height:520px;}
+  .hero-gradient{background:linear-gradient(to top,var(--noir) 0%,transparent 60%);}
+  .stat-strip{grid-template-columns:repeat(2,1fr);}
+  .about{grid-template-columns:1fr;}
+  .about-left{border-right:none;padding-bottom:40px;}
+  .about-right{border-top:1px solid var(--bd);}
+  .coll-header,.pkgs-head,.port-head{flex-direction:column;align-items:flex-start;}
+  .coll-desc,.pkgs-note{text-align:left;}
+  .prod-grid{grid-template-columns:repeat(2,1fr);}
+  .pkg-grid{grid-template-columns:1fr;}
+  .pkg{border-right:none!important;border-top:1px solid var(--bd);}
+  .pkg:first-child{border-top:none;}
+  .process{grid-template-columns:1fr;}
+  .proc-left{position:static;border-right:none;padding-bottom:32px;}
+  .proc-step{padding:36px var(--pad);}
+  .contact{grid-template-columns:1fr;}
+  .cont-left{border-right:none;}
+  .form-row{grid-template-columns:1fr;}
+  .foot-top{grid-template-columns:1fr;}
+  .foot-bot{flex-direction:column;text-align:center;}
+}
+@media(max-width:600px){
+  .hero-h1{font-size:4.2rem;}
+  .stat-strip{display:none;}
+  .prod-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+/* ═══════════════════════════════════════════════
+   FAQ — accordéon ultra-minimaliste
+═══════════════════════════════════════════════ */
+.faq{border-bottom:1px solid var(--bd);}
+.faq-header{
+  padding:clamp(48px,6vw,80px) var(--pad) clamp(36px,4vw,52px);
+  display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--bd);flex-wrap:wrap;gap:24px;
+}
+.faq-note{font-size:13px;font-weight:300;color:var(--mu);line-height:1.85;max-width:280px;text-align:right;}
+.faq-list{padding:0 var(--pad);}
+.faq-item{border-bottom:1px solid var(--bd);}
+.faq-item:last-child{border-bottom:none;}
+.faq-q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:clamp(24px,3vw,36px) 0;
+  background:none;border:none;cursor:none;text-align:left;
+  transition:color .22s var(--ease);
+}
+.faq-q:hover{color:var(--creme);}
+.faq-q-text{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.3;letter-spacing:.01em;
+  color:inherit;
+}
+.faq-q-icon{
+  width:32px;height:32px;flex-shrink:0;
+  border:1px solid var(--bd);border-radius:1px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:var(--mu);
+  transition:border-color .22s,color .22s,transform .35s var(--ease),background .22s;
+}
+.faq-item.open .faq-q-icon{
+  transform:rotate(45deg);
+  border-color:var(--or-b);color:var(--or2);background:var(--or-a);
+}
+.faq-item.open .faq-q{color:var(--creme);}
+.faq-body{
+  display:grid;grid-template-rows:0fr;
+  transition:grid-template-rows .42s var(--ease);
+}
+.faq-item.open .faq-body{grid-template-rows:1fr;}
+.faq-body-inner{
+  overflow:hidden;
+  padding-right:clamp(32px,6vw,120px);
+}
+.faq-a{
+  font-family:var(--sans);font-size:13px;font-weight:300;
+  line-height:2;color:var(--mu);
+  padding-bottom:clamp(24px,3vw,36px);
+  max-width:680px;
+}
+.faq-a a{color:var(--or2);border-bottom:1px solid var(--or-b);transition:border-color .2s;}
+.faq-a a:hover{border-color:var(--or2);}
+@media(max-width:900px){
+  .faq-header{flex-direction:column;align-items:flex-start;}
+  .faq-note{text-align:left;}
+  .faq-body-inner{padding-right:0;}
+}
 </style>
 </head>
 <body>
 
-<div id="cd"></div>
-<div id="cr"></div>
+<div id="c-d"></div>
+<div id="c-r"></div>
 
-<header id="hdr">
-  <a class="hl" href="#">HEEYJUDES<em>.</em></a>
-  <nav>
-    <a href="#about">About</a>
+<!-- ══════════ NAVBAR ══════════ -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#">
+    <!-- MONOGRAMME SVG — tracé fidèle : H (blanc) partageant la jambe droite avec J (or) -->
+    <svg width="28" height="34" viewBox="0 0 70 84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Monogramme HJ - HEEYJUDES">
+      <!-- H : montant gauche -->
+      <rect x="3"  y="3"  width="12" height="78" fill="#F0EDE8"/>
+      <!-- H : montant droit (partagé avec J) — partie haute uniquement -->
+      <rect x="33" y="3"  width="12" height="30" fill="#F0EDE8"/>
+      <!-- H : barre transversale -->
+      <rect x="3"  y="31" width="42" height="12" fill="#F0EDE8"/>
+      <!-- J : descend depuis le haut, barre verticale, puis crochet vers la gauche en bas -->
+      <path d="M45 3 L58 3 L58 58 Q58 81 36 81 Q14 81 14 63 L14 54 L27 54 Q27 68 36 68 Q45 68 45 58 Z" fill="#C8920A"/>
+    </svg>
+    <span class="nav-wordmark">HEEYJUDES<em>.</em></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#about">À propos</a>
+    <a href="#collection">Collection</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
   </nav>
-  <button class="hb" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Now</button>
-  <button class="hmb" id="hm"><i class="fa-solid fa-bars"></i></button>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Réserver</button>
+  <button class="nav-mob-btn" id="mob-open"><i class="fa-solid fa-bars"></i></button>
 </header>
 
-<div id="mn">
-  <button id="mnc"><i class="fa-solid fa-xmark"></i></button>
-  <a href="#about" onclick="document.getElementById('mn').classList.remove('on')">About</a>
-  <a href="#services" onclick="document.getElementById('mn').classList.remove('on')">Services</a>
-  <a href="#portfolio" onclick="document.getElementById('mn').classList.remove('on')">Portfolio</a>
-  <a href="#contact" onclick="document.getElementById('mn').classList.remove('on')">Contact</a>
+<div class="mob-nav" id="mob-nav">
+  <button class="mob-close" id="mob-close"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#about"      onclick="closeMob()">À propos</a>
+  <a href="#collection" onclick="closeMob()">Collection</a>
+  <a href="#services"   onclick="closeMob()">Services</a>
+  <a href="#portfolio"  onclick="closeMob()">Portfolio</a>
+  <a href="#contact"    onclick="closeMob()">Contact</a>
+  <a href="#faq"        onclick="closeMob()">FAQ</a>
 </div>
 
-<!-- HERO -->
+<!-- ══════════ HERO ══════════ -->
 <section class="hero">
-  <div class="hlft">
-    <div class="heb rv">Visual Storytelling Studio · Cap-haitien . Ouanaminthe</div>
-    <h1 class="htitle rv">MO<span class="or">MENT</span><span class="it">into memory.</span></h1>
-    <p class="hd rv">Cinematic photography & video. No stiff poses, no flat edits — raw energy, honest emotion, visuals that stop the scroll.</p>
-    <div class="hctas rv">
-      <button class="bm" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">View Packages <i class="fa-solid fa-arrow-right"></i></button>
-      <button class="bg" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">See the Work</button>
+  <div class="hero-txt">
+    <div class="sec-label hero-eyebrow rv">Cap-Haïtien · Ouanaminthe — Visual Studio</div>
+    <h1 class="hero-h1 rv">
+      <strong>Cinematic Photography & Video</strong>
+      Moment<br>into<br>memory.
+    </h1>
+    <p class="hero-desc rv">Énergie brute, émotion honnête, zéro pose rigide. Des visuels qui arrêtent le scroll et racontent votre histoire.</p>
+    <div class="hero-btns rv">
+      <button class="btn-fill" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+        Voir les packages <i class="fa-solid fa-arrow-right" style="font-size:9px"></i>
+      </button>
+      <button class="btn-line" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">
+        Voir le travail
+      </button>
     </div>
   </div>
-  <div class="hrgt">
-    <img src="image/judes01.jpg" class="hmi" alt="Jude">
-    <div class="hbadge"><strong>4+</strong>Years of<br>Experience</div>
-  </div>
-  <div class="hstats">
-    <div class="hst"><div class="hsn" data-t="200">0</div><div class="hsl">Sessions Done</div></div>
-    <div class="hst"><div class="hsn" data-t="98">0</div><div class="hsl">% Satisfied</div></div>
-    <div class="hst"><div class="hsn" data-t="14">0</div><div class="hsl">Portfolio Pieces</div></div>
-    <div class="hst"><div class="hsn" data-t="4">0</div><div class="hsl">Packages</div></div>
+  <div class="hero-img-wrap">
+    <img src="image/evenement-reportage-photo.webp" class="hero-photo" alt="HEEYJUDES — Studio de photographie cinématique, Cap-Haïtien Haïti" width="720" height="960" fetchpriority="high">
+    <div class="hero-gradient"></div>
+    <svg class="hero-wm" width="88" height="106" viewBox="0 0 70 84" fill="none">
+      <rect x="3"  y="3"  width="12" height="78" fill="#F0EDE8"/>
+      <rect x="33" y="3"  width="12" height="30" fill="#F0EDE8"/>
+      <rect x="3"  y="31" width="42" height="12" fill="#F0EDE8"/>
+      <path d="M45 3 L58 3 L58 58 Q58 81 36 81 Q14 81 14 63 L14 54 L27 54 Q27 68 36 68 Q45 68 45 58 Z" fill="#C8920A"/>
+    </svg>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n" data-t="200">0</div><div class="stat-l">Sessions</div></div>
+      <div class="stat"><div class="stat-n" data-t="98">0</div><div class="stat-l">% Satisfaits</div></div>
+      <div class="stat"><div class="stat-n" data-t="20">0</div><div class="stat-l">Portfolio</div></div>
+      <div class="stat"><div class="stat-n" data-t="4">0</div><div class="stat-l">Packages</div></div>
+    </div>
   </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="mq-wrap">
-  <div class="mq-track">
-    <span class="mq-item">Portraits <span class="mq-dot"></span></span><span class="mq-item">Brand Shoots <span class="mq-dot"></span></span><span class="mq-item">Events <span class="mq-dot"></span></span><span class="mq-item">Video Recaps <span class="mq-dot"></span></span><span class="mq-item">Reels <span class="mq-dot"></span></span><span class="mq-item">Content Days <span class="mq-dot"></span></span><span class="mq-item">Cinematic Edits <span class="mq-dot"></span></span><span class="mq-item">Portraits <span class="mq-dot"></span></span><span class="mq-item">Brand Shoots <span class="mq-dot"></span></span><span class="mq-item">Events <span class="mq-dot"></span></span><span class="mq-item">Video Recaps <span class="mq-dot"></span></span><span class="mq-item">Reels <span class="mq-dot"></span></span><span class="mq-item">Content Days <span class="mq-dot"></span></span><span class="mq-item">Cinematic Edits <span class="mq-dot"></span></span>
+<div class="div-gold"></div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Portraits</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Brand Shoots</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Événements</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Maternité</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Video Recaps</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Reels</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Content Days</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Édition Cinématique</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Portraits</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Brand Shoots</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Événements</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Maternité</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Video Recaps</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Reels</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Content Days</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span>Édition Cinématique</span>
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ══════════ À PROPOS — MANIFESTE ══════════ -->
 <section id="about" class="about">
-  <div>
-    <p class="atag rv">About the Studio</p>
-    <h2 class="atit rv">We shoot what<br><em>matters</em> to you.</h2>
-    <p class="abody rv">A photo & video studio built for people who want their visuals to make a real impact. You bring the idea — we bring the eye, the gear, and the edit.</p>
-    <div class="acards rv">
-      <div class="acard"><div class="acn">01</div><h4>Brand & Content Shoots</h4><p>Product photography, personal branding, reels, promos & social content designed to stop the scroll.</p></div>
-      <div class="acard"><div class="acn">02</div><h4>Creative Visuals</h4><p>Short-form visuals, concept shoots & custom projects shaped entirely around your unique story.</p></div>
-    </div>
-  </div>
-  <div class="apw rv">
-    <img src="image/img_8106.jpg" class="aph" alt="Studio">
-    <div class="apa"><strong>HT</strong><span>Based in</span></div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="svcs">
-  <div style="text-align:center;margin-bottom:0;">
-    <span class="stag rv">Packages</span>
-    <h2 class="stit rv">Pick Your <em>Experience</em></h2>
-  </div>
-  <div class="pkgs">
-    <div class="pkg pp rv" data-delay="0"><div class="pkbest">Best Value</div><div class="pkt">Platinum</div><div class="pkp">$250</div><ul class="pkf"><li><i class="fa-solid fa-check"></i>40 Photos</li><li><i class="fa-solid fa-check"></i>30 Pro Edits</li><li><i class="fa-solid fa-check"></i>2 Video Recaps</li><li><i class="fa-solid fa-check"></i>1 Instagram Pub</li><li><i class="fa-solid fa-check"></i>Express Delivery</li></ul><button class="pkbtn" onclick="openBook('Platinum')">Book Now →</button></div>
-    <div class="pkg pg rv" data-delay="80"><div class="pkt">Gold</div><div class="pkp">$200</div><ul class="pkf"><li><i class="fa-solid fa-check"></i>30 Photos</li><li><i class="fa-solid fa-check"></i>25 Pro Edits</li><li><i class="fa-solid fa-check"></i>1 Video Recap</li><li><i class="fa-solid fa-check"></i>1 Instagram Pub</li></ul><button class="pkbtn" onclick="openBook('Gold')">Book Now →</button></div>
-    <div class="pkg ps rv" data-delay="160"><div class="pkt">Silver</div><div class="pkp">$150</div><ul class="pkf"><li><i class="fa-solid fa-check"></i>25 Photos</li><li><i class="fa-solid fa-check"></i>15 Pro Edits</li><li><i class="fa-solid fa-check"></i>1 Mini Recap</li></ul><button class="pkbtn" onclick="openBook('Silver')">Book Now →</button></div>
-    <div class="pkg pb rv" data-delay="240"><div class="pkt">Bronze</div><div class="pkp">$100</div><ul class="pkf"><li><i class="fa-solid fa-check"></i>15 Photos</li><li><i class="fa-solid fa-check"></i>10 Pro Edits</li></ul><button class="pkbtn" onclick="openBook('Bronze')">Book Now →</button></div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="process">
-  <div class="prl">
-    <span class="prtag rv">How It Works</span>
-    <h2 class="prtit rv">Three steps to<br>your <em>story.</em></h2>
-    <p class="prsub rv">Simple process, cinematic results. Every session is personal, every edit crafted with intention.</p>
-  </div>
-  <div class="prsteps">
-    <div class="prstep rv"><div class="prn">01</div><div class="prc"><h3>Tell Us the Vision</h3><p>Hit us up and tell us what you want — brand shoot, content day, event, or concept. We define the style, mood, and direction together.</p></div></div>
-    <div class="prstep rv"><div class="prn">02</div><div class="prc"><h3>Shoot Day Energy</h3><p>We arrive with the gear, lighting, and direction. You show up confident — we guide poses, movement, and creative flow.</p></div></div>
-    <div class="prstep rv"><div class="prn">03</div><div class="prc"><h3>Edit & Delivery</h3><p>We select the best moments, apply our signature cinematic grade, and deliver ready-to-post visuals with a gallery link.</p></div></div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio" class="portfolio">
-  <div class="ph">
+  <div class="about-left">
     <div>
-      <span class="ptag rv">Portfolio</span>
-      <h2 class="ptit rv">A Selection of<br><em>Our Art</em></h2>
+      <div class="sec-label rv" style="margin-bottom:28px">À propos</div>
+      <div class="about-manifeste rv">
+        <strong>L'art de l'instant.</strong>
+        Derrière chaque image, il y a la recherche d'une harmonie invisible.
+      </div>
     </div>
-    <div class="pfilters rv">
-      <button class="flt on" data-f="all">All</button>
-      <button class="flt" data-f="portrait">Portrait</button>
-      <button class="flt" data-f="event">Event</button>
-      <button class="flt" data-f="brand">Brand</button>
+    <div class="about-body rv">
+      <p>Plus qu'une simple capture de la réalité, ma photographie est une exploration des formes, de la lumière naturelle et de la vérité des contrastes.</p>
+      <p>Inspiré par un minimalisme rigoureux et guidé par le désir de révéler l'essence brute de chaque sujet — qu'il s'agisse d'un portrait, d'une texture ou d'un fragment d'espace —, je conçois chaque série comme un récit visuel intemporel.</p>
+      <p>Capturer l'éphémère, concevoir l'épure, et figer ce qui ne se dira jamais deux fois.</p>
     </div>
+    <div class="about-signature rv">Bienvenue dans mon univers visuel.</div>
   </div>
-
-  <div class="fstrip" id="fstrip">
-    <div class="frow" id="frow">
-      <div class="fc fc-lg" data-c="portrait"><img src="image/img_8106.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Portrait</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-tl" data-c="event"><img src="image/img_1958.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Event</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-md" data-c="brand"><img src="image/photo2.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Brand</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-wd" data-c="portrait"><img src="image/dsc03602-1.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Portrait</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-tl" data-c="event"><img src="image/dsc03782.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Brand</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-sm" data-c="event"><img src="image/img_00031.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Event</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-md" data-c="portrait"><img src="image/img_8097.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Portrait</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-lg" data-c="event"><img src="image/img_3951.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Event</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-sm" data-c="portrait"><img src="image/img_3920.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Portrait</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-wd" data-c="brand"><img src="image/img_2312.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Brand</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-tl" data-c="event"><img src="image/img_4079.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Event</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-md" data-c="portrait"><img src="image/img_0013.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Portrait</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-lg" data-c="brand"><img src="image/img_1951-recupere.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Brand</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-sm" data-c="event"><img src="image/foto.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Event</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-sm" data-c="portrait"><img src="image/sdp00566.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Portrait</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-sm" data-c="brand"><img src="image/img_0266_2.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Brand</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-sm" data-c="event"><img src="image/img_5915.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Event</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
-      <div class="fc fc-sm" data-c="event"><img src="image/dad1f58c-95cf-4a28-80ee-8dedc9b37231.jpg" loading="lazy" alt=""><div class="fco"><div class="fcm"><span class="fccat">Event</span><div class="fczm"><i class="fa-solid fa-expand"></i></div></div></div></div>
+  <div class="about-right">
+    <div class="about-img-wrap">
+      <img src="image/judes01.webp" class="about-photo" alt="Séance portrait — HEEYJUDES Studio Haïti" loading="lazy" width="720" height="960">
     </div>
-  </div>
-
-  <div class="fprog">
-    <div class="fpt"><div class="fpf" id="fpf"></div></div>
-    <div class="fpi" id="fpi">Drag to explore</div>
-    <div class="fpbtns">
-      <button class="fpb" id="fpprev"><i class="fa-solid fa-arrow-left"></i></button>
-      <button class="fpb" id="fpnext"><i class="fa-solid fa-arrow-right"></i></button>
+    <div class="about-badge rv">
+      <div class="badge-n">4+</div>
+      <div class="badge-l">Années d'expérience<br>Basé en Haïti</div>
     </div>
   </div>
 </section>
 
-<!-- LIGHTBOX -->
-<div id="lb">
-  <button class="lbx" id="lbx">×</button>
-  <button class="lbn lbp" id="lbp">‹</button>
-  <button class="lbn lbnx" id="lbnx">›</button>
-  <img id="lbimg" src="" alt="">
-  <div class="lbc" id="lbc">1 / 14</div>
+<!-- ══════════ COLLECTION ══════════ -->
+<section id="collection" class="collection">
+  <div class="coll-header">
+    <div>
+      <div class="sec-label rv" style="margin-bottom:20px">Collection</div>
+      <h2 class="sec-title rv">Nos <em>meilleurs</em><br>clichés.</h2>
+    </div>
+    <p class="coll-desc rv">Une sélection curaté. Chaque image est un récit.</p>
+  </div>
+
+  <!-- GRILLE ÉDITORIALE — 4 grandes cartes avec titres overlay permanents -->
+  <div class="prod-grid rv" id="pgrid">
+
+    <div class="prod-card" onclick="openGrid(0)">
+      <div class="prod-img">
+        <img src="image/portrait-confiance-editorial.webp" loading="lazy" alt="Portrait éditorial — HEEYJUDES">
+        <div class="prod-ovl">
+          <span class="prod-cat">Portrait</span>
+          <div class="prod-name">Portrait Éditorial</div>
+          <div class="prod-type">Studio · Cap-Haïtien</div>
+          <button class="prod-action">Agrandir <i class="fa-solid fa-expand" style="font-size:8px"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openGrid(1)">
+      <div class="prod-img">
+        <img src="image/seance-couple-maternite.webp" loading="lazy" alt="Séance maternité — HEEYJUDES">
+        <div class="prod-ovl">
+          <span class="prod-cat">Maternité</span>
+          <div class="prod-name">Séance Maternité</div>
+          <div class="prod-type">Studio · Émotionnel</div>
+          <button class="prod-action">Agrandir <i class="fa-solid fa-expand" style="font-size:8px"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openGrid(2)">
+      <div class="prod-img">
+        <img src="image/shooting-portrait-exterieur.webp" loading="lazy" alt="Portrait extérieur — HEEYJUDES">
+        <div class="prod-ovl">
+          <span class="prod-cat">Portrait</span>
+          <div class="prod-name">Portrait Extérieur</div>
+          <div class="prod-type">Cinématique · Ouanaminthe</div>
+          <button class="prod-action">Agrandir <i class="fa-solid fa-expand" style="font-size:8px"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" onclick="openGrid(3)">
+      <div class="prod-img">
+        <img src="image/portrait-mode-editorial.webp" loading="lazy" alt="Portrait mode — HEEYJUDES">
+        <div class="prod-ovl">
+          <span class="prod-cat">Portrait</span>
+          <div class="prod-name">Portrait Mode</div>
+          <div class="prod-type">Éditorial · Haute Gamme</div>
+          <button class="prod-action">Agrandir <i class="fa-solid fa-expand" style="font-size:8px"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SLIDER CINÉMATIQUE — 3 slides, chacun avec 1 grande + 2 vignettes -->
+  <div class="coll-slider">
+    <div class="coll-slides" id="cslSlides">
+
+      <!-- SLIDE 1 — Reportage & Événement -->
+      <div class="coll-slide">
+        <div class="csl-main" onclick="openGrid(4)">
+          <img src="image/evenement-reportage-photo.webp" loading="lazy" alt="Reportage événement — HEEYJUDES">
+          <div class="csl-main-ovl">
+            <span class="csl-badge">Événement</span>
+            <div class="csl-title">Session en vedette :<br>Reportage Vivant</div>
+            <p class="csl-sub">L'énergie brute des grands moments capturée avec précision.</p>
+            <span class="csl-count">(3 photos)</span>
+          </div>
+        </div>
+        <div class="csl-thumb" onclick="openGrid(5)">
+          <img src="image/couverture-evenement-haiti.webp" loading="lazy" alt="Couverture événement Haïti">
+          <div class="csl-thumb-ovl">
+            <span class="csl-thumb-cat">Événement</span>
+            <div class="csl-thumb-name">Couverture<br>Haïti</div>
+          </div>
+        </div>
+        <div class="csl-thumb" onclick="openGrid(6)">
+          <img src="image/portrait-artistique-studio.webp" loading="lazy" alt="Soirée événementielle">
+          <div class="csl-thumb-ovl">
+            <span class="csl-thumb-cat">Soirée</span>
+            <div class="csl-thumb-name">Reportage<br>Nocturne</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 — Brand & Commercial -->
+      <div class="coll-slide">
+        <div class="csl-main" onclick="openGrid(7)">
+          <img src="image/portrait-studio-heeeyjudes.webp" loading="lazy" alt="Studio signature — HEEYJUDES">
+          <div class="csl-main-ovl">
+            <span class="csl-badge">Brand</span>
+            <div class="csl-title">Session en vedette :<br>Studio Signature</div>
+            <p class="csl-sub">L'identité visuelle de votre marque, élevée au rang d'art.</p>
+            <span class="csl-count">(3 photos)</span>
+          </div>
+        </div>
+        <div class="csl-thumb" onclick="openGrid(8)">
+          <img src="image/brand-content-social-media.webp" loading="lazy" alt="Brand content social media">
+          <div class="csl-thumb-ovl">
+            <span class="csl-thumb-cat">Brand</span>
+            <div class="csl-thumb-name">Content<br>Social Media</div>
+          </div>
+        </div>
+        <div class="csl-thumb" onclick="openGrid(9)">
+          <img src="image/shooting-brand-produit.webp" loading="lazy" alt="Shooting produit brand">
+          <div class="csl-thumb-ovl">
+            <span class="csl-thumb-cat">Commercial</span>
+            <div class="csl-thumb-name">Shooting<br>Produit</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 — Portrait & Cinématique -->
+      <div class="coll-slide">
+        <div class="csl-main" onclick="openGrid(10)">
+          <img src="image/portrait-cinematique-haiti.webp" loading="lazy" alt="Portrait cinématique Haïti">
+          <div class="csl-main-ovl">
+            <span class="csl-badge">Portrait</span>
+            <div class="csl-title">Session en vedette :<br>L'Essence du Sujet</div>
+            <p class="csl-sub">Révéler la vérité d'un regard. Lumière naturelle, zéro artifice.</p>
+            <span class="csl-count">(3 photos)</span>
+          </div>
+        </div>
+        <div class="csl-thumb" onclick="openGrid(11)">
+          <img src="image/portrait-lumiere-naturelle.webp" loading="lazy" alt="Portrait lumière naturelle">
+          <div class="csl-thumb-ovl">
+            <span class="csl-thumb-cat">Portrait</span>
+            <div class="csl-thumb-name">Lumière<br>Naturelle</div>
+          </div>
+        </div>
+        <div class="csl-thumb" onclick="openGrid(12)">
+          <img src="image/portrait-artistique-studio.webp" loading="lazy" alt="Portrait artistique studio">
+          <div class="csl-thumb-ovl">
+            <span class="csl-thumb-cat">Artistique</span>
+            <div class="csl-thumb-name">Studio<br>Artistique</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flèches navigation -->
+    <div class="coll-slider-nav">
+      <button class="csl-btn" id="cslPrev"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="csl-btn" id="cslNext"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!-- Dots -->
+    <div class="csl-dots">
+      <button class="csl-dot on" data-s="0"></button>
+      <button class="csl-dot" data-s="1"></button>
+      <button class="csl-dot" data-s="2"></button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════ PACKAGES ══════════ -->
+<section id="services" class="pkgs">
+  <div class="pkgs-head">
+    <div>
+      <div class="sec-label rv" style="margin-bottom:20px">Packages</div>
+      <h2 class="sec-title rv">Choisissez votre<br><em>expérience.</em></h2>
+    </div>
+    <p class="pkgs-note rv">Chaque package inclut édition pro et galerie privée.</p>
+  </div>
+  <div class="pkg-grid">
+    <div class="pkg pkg-ft rv">
+      <div class="pkg-lbl">Platinum</div>
+      <div class="pkg-price"><sup>$</sup>250</div>
+      <div class="pkg-badge">Meilleur rapport</div>
+      <div class="pkg-div"></div>
+      <ul class="pkg-feats"><li>40 Photos</li><li>30 Retouches Pro</li><li>2 Recaps Vidéo</li><li>1 Publication Instagram</li><li>Livraison Express</li></ul>
+      <button class="pkg-btn" onclick="openModal('Platinum')">Réserver maintenant</button>
+    </div>
+    <div class="pkg rv" data-delay="60">
+      <div class="pkg-lbl">Gold</div>
+      <div class="pkg-price"><sup>$</sup>200</div>
+      <div class="pkg-div" style="margin-top:52px"></div>
+      <ul class="pkg-feats"><li>30 Photos</li><li>25 Retouches Pro</li><li>1 Recap Vidéo</li><li>1 Publication Instagram</li></ul>
+      <button class="pkg-btn" onclick="openModal('Gold')">Réserver maintenant</button>
+    </div>
+    <div class="pkg rv" data-delay="120">
+      <div class="pkg-lbl">Silver</div>
+      <div class="pkg-price"><sup>$</sup>150</div>
+      <div class="pkg-div" style="margin-top:52px"></div>
+      <ul class="pkg-feats"><li>25 Photos</li><li>15 Retouches Pro</li><li>1 Mini Recap</li></ul>
+      <button class="pkg-btn" onclick="openModal('Silver')">Réserver maintenant</button>
+    </div>
+    <div class="pkg rv" data-delay="180">
+      <div class="pkg-lbl">Bronze</div>
+      <div class="pkg-price"><sup>$</sup>100</div>
+      <div class="pkg-div" style="margin-top:52px"></div>
+      <ul class="pkg-feats"><li>15 Photos</li><li>10 Retouches Pro</li></ul>
+      <button class="pkg-btn" onclick="openModal('Bronze')">Réserver maintenant</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROCESSUS ══════════ -->
+<section class="process">
+  <div class="proc-left">
+    <div class="sec-label rv" style="margin-bottom:28px">Comment ça marche</div>
+    <h2 class="sec-title rv">Trois étapes<br>vers votre <em>histoire.</em></h2>
+    <p class="proc-sub rv">Processus simple, résultats cinématiques. Chaque session est personnelle.</p>
+  </div>
+  <div class="proc-steps">
+    <div class="proc-step rv"><div class="step-num">01</div><div class="step-body"><h3>Partagez votre vision</h3><p>Shooting marque, content day, maternité, événement ou concept — on définit ensemble le style, l'ambiance et la direction artistique.</p></div></div>
+    <div class="proc-step rv"><div class="step-num">02</div><div class="step-body"><h3>Énergie du jour J</h3><p>On arrive avec le matériel et la direction. Vous arrivez en confiance — on guide les poses, les mouvements et le flux créatif.</p></div></div>
+    <div class="proc-step rv"><div class="step-num">03</div><div class="step-body"><h3>Édition & livraison</h3><p>Grade cinématique signature. Visuels prêts à publier via galerie privée dans les délais convenus.</p></div></div>
+  </div>
+</section>
+
+<!-- ══════════ PORTFOLIO STRIP ══════════ -->
+<section id="portfolio" class="port">
+  <div class="port-head">
+    <div>
+      <div class="sec-label rv" style="margin-bottom:20px">Portfolio</div>
+      <h2 class="sec-title rv">Une sélection<br><em>de notre art.</em></h2>
+    </div>
+    <div class="port-filters rv">
+      <button class="pflt on" data-pf="all">Tout</button>
+      <button class="pflt" data-pf="portrait">Portrait</button>
+      <button class="pflt" data-pf="maternite">Maternité</button>
+      <button class="pflt" data-pf="event">Événement</button>
+      <button class="pflt" data-pf="brand">Brand</button>
+    </div>
+  </div>
+  <div class="strip" id="strip">
+    <div class="strip-row" id="srow">
+      <div class="sc" data-pc="portrait"   style="width:218px;height:298px"><img src="image/portrait-confiance-editorial.webp" loading="lazy" alt="Portrait éditorial"><div class="sc-ovl"><span class="sc-cat">Portrait</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="maternite"  style="width:240px;height:320px"><img src="image/seance-couple-maternite.webp" loading="lazy" alt="Maternité couple"><div class="sc-ovl"><span class="sc-cat">Maternité</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="brand"      style="width:198px;height:278px"><img src="image/brand-content-social-media.webp" loading="lazy" alt="Brand content"><div class="sc-ovl"><span class="sc-cat">Brand</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="portrait"   style="width:262px;height:302px"><img src="image/shooting-portrait-exterieur.webp" loading="lazy" alt="Portrait extérieur"><div class="sc-ovl"><span class="sc-cat">Portrait</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="brand"      style="width:182px;height:262px"><img src="image/portrait-lumiere-naturelle.webp" loading="lazy" alt="Lumière naturelle"><div class="sc-ovl"><span class="sc-cat">Brand</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="event"      style="width:202px;height:282px"><img src="image/evenement-reportage-photo.webp" loading="lazy" alt="Reportage événement"><div class="sc-ovl"><span class="sc-cat">Événement</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="portrait"   style="width:172px;height:252px"><img src="image/portrait-lumineux-studio.webp" loading="lazy" alt="Portrait lumineux"><div class="sc-ovl"><span class="sc-cat">Portrait</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="event"      style="width:222px;height:302px"><img src="image/couverture-evenement-haiti.webp" loading="lazy" alt="Couverture événement"><div class="sc-ovl"><span class="sc-cat">Événement</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="portrait"   style="width:162px;height:242px"><img src="image/portrait-mode-editorial.webp" loading="lazy" alt="Portrait mode"><div class="sc-ovl"><span class="sc-cat">Portrait</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="brand"      style="width:242px;height:282px"><img src="image/photo-brand-commercial.webp" loading="lazy" alt="Brand commercial"><div class="sc-ovl"><span class="sc-cat">Brand</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="event"      style="width:182px;height:262px"><img src="image/reportage-photo-corporate.webp" loading="lazy" alt="Corporate"><div class="sc-ovl"><span class="sc-cat">Événement</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="portrait"   style="width:202px;height:282px"><img src="image/portrait-cinematique-haiti.webp" loading="lazy" alt="Portrait cinématique"><div class="sc-ovl"><span class="sc-cat">Portrait</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="brand"      style="width:222px;height:302px"><img src="image/contenu-marque-lifestyle.webp" loading="lazy" alt="Contenu marque"><div class="sc-ovl"><span class="sc-cat">Brand</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="event"      style="width:162px;height:242px"><img src="image/ambiance-tournage-video.webp" loading="lazy" alt="Tournage vidéo"><div class="sc-ovl"><span class="sc-cat">Événement</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="portrait"   style="width:202px;height:282px"><img src="image/seance-portrait-mode.webp" loading="lazy" alt="Portrait mode"><div class="sc-ovl"><span class="sc-cat">Portrait</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="maternite"  style="width:210px;height:290px"><img src="image/seance-couple-maternite.webp" loading="lazy" alt="Maternité"><div class="sc-ovl"><span class="sc-cat">Maternité</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="event"      style="width:172px;height:252px"><img src="image/soiree-evenementielle-reportage.webp" loading="lazy" alt="Soirée événementielle"><div class="sc-ovl"><span class="sc-cat">Événement</span><div class="sc-zoom">+</div></div></div>
+      <div class="sc" data-pc="brand"      style="width:182px;height:262px"><img src="image/shooting-brand-produit.webp" loading="lazy" alt="Shooting produit"><div class="sc-ovl"><span class="sc-cat">Brand</span><div class="sc-zoom">+</div></div></div>
+    </div>
+  </div>
+  <div class="strip-nav">
+    <div class="prog"><div class="prog-f" id="pf"></div></div>
+    <span class="prog-lbl" id="pl">1 / 18</span>
+    <button class="strip-btn" id="sprev"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="strip-btn" id="snext"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</section>
+
+<!-- ══════════ LIGHTBOX ══════════ -->
+<div class="lb" id="lb">
+  <button class="lb-x" id="lbx">×</button>
+  <button class="lb-arr lb-p" id="lbp">‹</button>
+  <button class="lb-arr lb-n" id="lbn">›</button>
+  <img id="lbimg" src="" alt="Photo HEEYJUDES">
+  <div class="lb-ctr" id="lbc">1 / 12</div>
 </div>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div>
-    <div class="ctag rv">Let's Connect</div>
-    <h2 class="ctit rv">Ready to Create<br><em>Something Iconic?</em></h2>
-    <p class="csub rv">Every great photo starts with a conversation. We reply within 24 hours.</p>
-    <div class="clinks">
-      <a href="mailto:francoisjudson97@gmail.com" class="clink rv"><i class="fa-solid fa-envelope"></i> francoisjudson97@gmail.com</a>
-      <a href="https://www.instagram.com/heeyjudes__01?igsh=MXVicDRuNWt0dnYwZw%3D%3D&utm_source=qr" class="clink rv" target="_blank"><i class="fa-brands fa-instagram"></i> @heeeyjudes</a>
-      <a href="https://wa.me/message/YO3F4MKNOKBYA1" class="clink rv" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Booking</a>
+<!-- ══════════ FAQ ══════════ -->
+<section id="faq" class="faq">
+  <div class="faq-header">
+    <div>
+      <div class="sec-label rv" style="margin-bottom:20px">FAQ</div>
+      <h2 class="sec-title rv">Vos questions,<br>nos <em>réponses.</em></h2>
     </div>
+    <p class="faq-note rv">Tout ce que vous avez toujours voulu savoir avant de réserver votre session.</p>
   </div>
-  <div class="fbox rv">
-    <h3>Book a Session</h3>
-    <div class="fg"><input type="text" id="fn" placeholder="Your Name" class="fi"></div>
-    <div class="fg"><input type="email" id="fe" placeholder="Your Email" class="fi"></div>
-    <div class="fg"><select id="fp" class="fi"><option value="">Select a Package</option><option>Platinum — $250</option><option>Gold — $200</option><option>Silver — $150</option><option>Bronze — $100</option></select></div>
-    <div class="fg"><input type="date" id="fd" class="fi"></div>
-    <div class="fg"><textarea id="fm" placeholder="Tell us about your vision..." class="fi fita"></textarea></div>
-    <button class="sbtn" onclick="submitForm()">Send Request <i class="fa-solid fa-paper-plane"></i></button>
-    <div class="fok" id="fok">✅ Sent! We'll reach out within 24 hours.</div>
+  <div class="faq-list">
+
+    <div class="faq-item rv">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Comment réserver une session ?</span>
+        <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-body-inner">
+          <p class="faq-a">Il suffit de remplir le <a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;">formulaire de contact</a> ou de nous écrire directement via <a href="https://wa.me/message/YO3F4MKNOKBYA1" target="_blank" rel="noopener">WhatsApp</a>. Nous vous répondons dans les 24 heures pour confirmer la date, le lieu et le package choisi. Un acompte de 30 % est demandé pour valider la réservation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item rv">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Quels sont les délais de livraison des photos éditées ?</span>
+        <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-body-inner">
+          <p class="faq-a">Les délais varient selon le package. Pour le package Platinum, bénéficiez d'une livraison express en <strong style="color:var(--creme);font-weight:400">48 à 72 heures</strong>. Pour les packages Gold et Silver, comptez 5 à 7 jours ouvrables. Les photos sont livrées via une galerie privée en haute résolution, prêtes à être publiées ou imprimées.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item rv">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Proposez-vous des tirages physiques ou uniquement du numérique ?</span>
+        <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-body-inner">
+          <p class="faq-a">Tous nos packages incluent la livraison numérique en haute résolution. Les tirages physiques (impressions fine art, tirages encadrés) sont disponibles en option sur demande — contactez-nous pour un devis personnalisé selon le format et la finition souhaités.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item rv">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Travaillez-vous en dehors de Cap-Haïtien ?</span>
+        <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-body-inner">
+          <p class="faq-a">Oui. Nous sommes basés à Cap-Haïtien et Ouanaminthe, mais nous nous déplaçons sur tout le territoire haïtien pour des projets d'envergure — événements, tournages de marque ou sessions portrait. Des frais de déplacement peuvent s'appliquer selon la distance. N'hésitez pas à nous contacter pour en discuter.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item rv">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Quelle est votre approche pour les portraits ? Doit-on savoir poser ?</span>
+        <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-body-inner">
+          <p class="faq-a">Aucune expérience de pose n'est nécessaire. Notre philosophie est simple : énergie brute, émotion honnête, zéro pose rigide. Nous guidons chaque client tout au long de la session avec des directions naturelles et un environnement détendu. Le résultat ? Des images qui vous ressemblent vraiment.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="contact">
+  <div class="cont-left">
+    <div class="sec-label rv" style="margin-bottom:28px">Travaillons ensemble</div>
+    <h2 class="sec-title rv">Prêt à créer<br><em>quelque chose<br>d'iconique ?</em></h2>
+    <p class="cont-desc rv">Chaque grande photo commence par une conversation. Nous répondons dans les 24 heures.</p>
+    <div class="cont-links">
+      <a href="mailto:francoisjudson97@gmail.com" class="cont-link rv"><i class="fa-solid fa-envelope"></i>francoisjudson97@gmail.com</a>
+      <a href="https://www.instagram.com/heeyjudes__01" class="cont-link rv" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i>@heeeyjudes</a>
+      <a href="https://wa.me/message/YO3F4MKNOKBYA1" class="cont-link rv" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>WhatsApp Booking</a>
+    </div>
+  </div>
+  <div class="cont-right rv">
+    <div class="form-title">Réserver une session</div>
+    <!-- FORMSPREE ID CONFIGURÉ : xrewgkge -->
+    <form id="cform" action="https://formspree.io/f/xrewgkge" method="POST">
+      <div class="form-row">
+        <div class="form-field">
+          <label class="form-label" for="f-name">Nom</label>
+          <input type="text" id="f-name" name="name" placeholder="Votre nom complet" class="form-input" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" placeholder="votre@email.com" class="form-input" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-pkg">Package</label>
+        <select id="f-pkg" name="package" class="form-input">
+          <option value="">Choisir un package (optionnel)</option>
+          <option>Platinum — $250</option>
+          <option>Gold — $200</option>
+          <option>Silver — $150</option>
+          <option>Bronze — $100</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-date">Date souhaitée</label>
+        <input type="date" id="f-date" name="date" class="form-input">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" placeholder="Parlez-nous de votre projet, votre vision, votre idée…" class="form-input form-textarea" required></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="fsubmit">
+        Envoyer la demande <i class="fa-solid fa-paper-plane" style="font-size:10px"></i>
+      </button>
+    </form>
+    <div class="form-ok" id="fok">✅ Message envoyé — nous vous répondons dans les 24h.</div>
+  </div>
+</section>
+
+<!-- ══════════ MODAL ══════════ -->
+<div class="modal-bg" id="modal">
+  <div class="modal-box">
+    <button class="modal-x" onclick="closeModal()">×</button>
+    <h3>Réserver <em id="mpkg">Platinum</em></h3>
+    <p>Remplissez ce formulaire et nous confirmons dans les 24h.</p>
+    <div class="form-field"><label class="form-label">Nom</label><input type="text" placeholder="Votre nom" class="form-input"></div>
+    <div class="form-field"><label class="form-label">Email</label><input type="email" placeholder="votre@email.com" class="form-input"></div>
+    <div class="form-field"><label class="form-label">Date</label><input type="date" class="form-input"></div>
+    <button class="form-submit" onclick="closeModal();toast('🎉 Demande envoyée !')">Confirmer <i class="fa-solid fa-check" style="font-size:9px"></i></button>
+  </div>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
 <footer>
-  <div class="flogo">HEEEYJUDES<em>.</em></div>
-  <p class="fcpy">© 2025 HEEEYJUDES Photography. All rights reserved.</p>
-  <div class="fsoc"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <div class="foot-logo">
+        <svg width="24" height="30" viewBox="0 0 70 84" fill="none">
+          <rect x="3"  y="3"  width="12" height="78" fill="#F0EDE8"/>
+          <rect x="33" y="3"  width="12" height="30" fill="#F0EDE8"/>
+          <rect x="3"  y="31" width="42" height="12" fill="#F0EDE8"/>
+          <path d="M45 3 L58 3 L58 58 Q58 81 36 81 Q14 81 14 63 L14 54 L27 54 Q27 68 36 68 Q45 68 45 58 Z" fill="#C8920A"/>
+        </svg>
+        <span class="foot-wm">HEEYJUDES<em>.</em></span>
+      </div>
+      <p class="foot-tag">Photographie & vidéo cinématique pour les personnes qui exigent des visuels qui disent vraiment quelque chose.</p>
+      <div class="foot-soc">
+        <a href="https://www.instagram.com/heeyjudes__01" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://wa.me/message/YO3F4MKNOKBYA1" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h5>Navigation</h5>
+      <a href="#about">À propos</a>
+      <a href="#collection">Collection</a>
+      <a href="#services">Packages</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Réserver</a>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <a href="mailto:francoisjudson97@gmail.com">francoisjudson97@gmail.com</a>
+      <a href="https://www.instagram.com/heeyjudes__01" target="_blank" rel="noopener">@heeeyjudes</a>
+      <a href="https://wa.me/message/YO3F4MKNOKBYA1" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="foot-loc">Cap-Haïtien · Ouanaminthe</a>
+    </div>
+  </div>
+  <div class="div-gold"></div>
+  <div class="foot-bot">
+    <span class="foot-copy">© 2025 HEEYJUDES Photography. Tous droits réservés.</span>
+    <span class="foot-copy" style="font-style:italic">Built with intention.</span>
+  </div>
 </footer>
 
-<!-- MODAL -->
-<div id="mw">
-  <div class="modal">
-    <button class="mx" onclick="closeBk()">×</button>
-    <h3>Book <span id="mpkg">Platinum</span></h3>
-    <p>Fill this out and we'll confirm your session within 24h.</p>
-    <div class="fg"><input type="text" placeholder="Your Name" class="fi"></div>
-    <div class="fg"><input type="email" placeholder="Your Email" class="fi"></div>
-    <div class="fg"><input type="date" class="fi"></div>
-    <button class="sbtn" onclick="closeBk();showToast('🎉 Booking sent!')">Confirm <i class="fa-solid fa-check"></i></button>
-  </div>
-</div>
+<div class="toast" id="tst"></div>
 
-<div id="toast"></div>
-
+<!-- ══════════ JS ══════════ -->
 <script>
-// CURSOR
-const cd=document.getElementById('cd'),cr=document.getElementById('cr');
+/* CURSOR */
+const cd=document.getElementById('c-d'),cr=document.getElementById('c-r');
 let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cd.style.left=mx+'px';cd.style.top=my+'px';});
-(function anim(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(anim);})();
-document.querySelectorAll('a,button,.fc,.flt').forEach(el=>{
+(function a(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(a);})();
+document.querySelectorAll('a,button,.prod-card,.sc,.pkg,.flt,.pflt,.faq-item').forEach(el=>{
   el.addEventListener('mouseenter',()=>document.body.classList.add('hov'));
   el.addEventListener('mouseleave',()=>document.body.classList.remove('hov'));
 });
 
-// HEADER
-window.addEventListener('scroll',()=>document.getElementById('hdr').classList.toggle('s',scrollY>60));
-
-// MOBILE NAV
-document.getElementById('hm').addEventListener('click',()=>document.getElementById('mn').classList.add('on'));
-document.getElementById('mnc').addEventListener('click',()=>document.getElementById('mn').classList.remove('on'));
-
-// REVEAL
-const obs=new IntersectionObserver(es=>{
-  es.forEach(e=>{
-    if(e.isIntersecting){
-      setTimeout(()=>e.target.classList.add('vis'),parseInt(e.target.dataset.delay||0));
-      obs.unobserve(e.target);
-    }
-  });
-},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
-
-// Trigger hero reveals immediately
-document.querySelectorAll('.hero .rv').forEach((el,i)=>setTimeout(()=>el.classList.add('vis'),200+i*120));
-
-// COUNTER
-function animN(el){
-  const t=parseInt(el.dataset.t||0);if(!t)return;
-  const dur=1500,s=performance.now();
-  (function r(now){const p=Math.min((now-s)/dur,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(e*t);if(p<1)requestAnimationFrame(r);})(s);
+/* FAQ ACCORDION */
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  const wasOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen)item.classList.add('open');
 }
-document.querySelectorAll('.hsn').forEach(el=>animN(el));
 
-// FILM STRIP
-const strip=document.getElementById('fstrip');
-const row=document.getElementById('frow');
-const fpf=document.getElementById('fpf');
-const fpi=document.getElementById('fpi');
-let isDrag=false,startX,sl;
+/* HEADER SCROLL */
+const navEl=document.getElementById('nav');
+window.addEventListener('scroll',()=>navEl.classList.toggle('scrolled',scrollY>60),{passive:true});
 
-strip.addEventListener('mousedown',e=>{isDrag=true;startX=e.pageX-strip.offsetLeft;sl=strip.scrollLeft;strip.classList.add('grab');});
-document.addEventListener('mouseup',()=>{isDrag=false;strip.classList.remove('grab');});
-strip.addEventListener('mousemove',e=>{if(!isDrag)return;e.preventDefault();strip.scrollLeft=sl-(e.pageX-strip.offsetLeft-startX)*1.4;updProg();});
-strip.addEventListener('touchstart',e=>{startX=e.touches[0].pageX-strip.offsetLeft;sl=strip.scrollLeft;},{passive:true});
-strip.addEventListener('touchmove',e=>{strip.scrollLeft=sl-(e.touches[0].pageX-strip.offsetLeft-startX)*1.2;updProg();},{passive:true});
-strip.addEventListener('scroll',updProg);
+/* MOBILE NAV */
+document.getElementById('mob-open').addEventListener('click',()=>document.getElementById('mob-nav').classList.add('open'));
+document.getElementById('mob-close').addEventListener('click',()=>document.getElementById('mob-nav').classList.remove('open'));
+function closeMob(){document.getElementById('mob-nav').classList.remove('open');}
 
-document.getElementById('fpnext').addEventListener('click',()=>{strip.scrollBy({left:360,behavior:'smooth'});setTimeout(updProg,400);});
-document.getElementById('fpprev').addEventListener('click',()=>{strip.scrollBy({left:-360,behavior:'smooth'});setTimeout(updProg,400);});
+/* REVEAL */
+const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vis'),parseInt(e.target.dataset.delay||0));ro.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -44px 0px'});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+document.querySelectorAll('.hero .rv').forEach((el,i)=>setTimeout(()=>el.classList.add('vis'),110+i*85));
 
-function updProg(){
-  const max=strip.scrollWidth-strip.clientWidth;
-  const pct=max>0?strip.scrollLeft/max*100:0;
-  fpf.style.width=Math.round(pct)+'%';
-  const vis=Math.round(pct/100*(row.children.length-1))+1;
-  fpi.textContent=Math.min(vis,row.children.length)+' / '+row.children.length;
-}
-updProg();
+/* COUNTERS */
+function cnt(el){const t=parseInt(el.dataset.t);if(!t)return;const d=1400,s=performance.now();(function r(n){const p=Math.min((n-s)/d,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(e*t);if(p<1)requestAnimationFrame(r);})(s);}
+document.querySelectorAll('.stat-n').forEach(el=>cnt(el));
 
-// FILTER
-document.querySelectorAll('.flt').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.flt').forEach(b=>b.classList.remove('on'));
-    btn.classList.add('on');
-    const f=btn.dataset.f;
-    [...row.children].forEach(fc=>fc.style.display=(f==='all'||fc.dataset.c===f)?'block':'none');
-    strip.scrollLeft=0;
-    setTimeout(updProg,80);
-  });
-});
+/* GRID FILTER */
+document.querySelectorAll('.flt').forEach(b=>{b.addEventListener('click',()=>{
+  document.querySelectorAll('.flt').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const f=b.dataset.f;
+  document.querySelectorAll('.prod-card').forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'block':'none');
+});});
 
-// LIGHTBOX
-let lbImgs=[],lbIdx=0;
-const lb=document.getElementById('lb');
-const lbImg=document.getElementById('lbimg');
-const lbC=document.getElementById('lbc');
+/* LIGHTBOX GRID */
+const gImgs=['image/portrait-confiance-editorial.webp','image/seance-couple-maternite.webp','image/shooting-portrait-exterieur.webp','image/portrait-cinematique-haiti.webp','image/brand-content-social-media.webp','image/evenement-reportage-photo.webp','image/portrait-mode-editorial.webp','image/portrait-studio-heeeyjudes.webp'];
+let lbArr=gImgs,lbI=0;
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbimg'),lbC=document.getElementById('lbc');
+function openGrid(i){lbArr=gImgs;lbI=i;showLb();}
 
-document.querySelectorAll('.fc').forEach(fc=>{
-  fc.addEventListener('click',()=>{
-    const vis=[...row.querySelectorAll('.fc')].filter(f=>f.style.display!=='none');
-    lbImgs=vis.map(f=>f.querySelector('img').src);
-    lbIdx=vis.indexOf(fc);
-    showLb();
-  });
-});
-
-function showLb(){lbImg.src='';setTimeout(()=>lbImg.src=lbImgs[lbIdx],10);lbC.textContent=(lbIdx+1)+' / '+lbImgs.length;lb.classList.add('on');document.body.style.overflow='hidden';}
-function closeLb(){lb.classList.remove('on');document.body.style.overflow='';}
+/* COLLECTION SLIDER */
+(function(){
+  const slides=document.getElementById('cslSlides');
+  if(!slides)return;
+  const dots=[...document.querySelectorAll('.csl-dot')];
+  const total=3;let cur=0;
+  function go(n){
+    cur=(n+total)%total;
+    slides.style.transform='translateX(-'+cur*100+'%)';
+    dots.forEach((d,i)=>d.classList.toggle('on',i===cur));
+  }
+  document.getElementById('cslNext')?.addEventListener('click',()=>go(cur+1));
+  document.getElementById('cslPrev')?.addEventListener('click',()=>go(cur-1));
+  dots.forEach(d=>d.addEventListener('click',()=>go(+d.dataset.s)));
+  // autoplay toutes les 5s
+  let timer=setInterval(()=>go(cur+1),5000);
+  slides.closest('.coll-slider')?.addEventListener('mouseenter',()=>clearInterval(timer));
+  slides.closest('.coll-slider')?.addEventListener('mouseleave',()=>{timer=setInterval(()=>go(cur+1),5000);});
+})();
+function showLb(){lbImg.src='';setTimeout(()=>lbImg.src=lbArr[lbI],10);lbC.textContent=(lbI+1)+' / '+lbArr.length;lb.classList.add('open');document.body.style.overflow='hidden';}
+function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
 document.getElementById('lbx').addEventListener('click',closeLb);
 lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
-document.getElementById('lbp').addEventListener('click',()=>{lbIdx=(lbIdx-1+lbImgs.length)%lbImgs.length;showLb();});
-document.getElementById('lbnx').addEventListener('click',()=>{lbIdx=(lbIdx+1)%lbImgs.length;showLb();});
-document.addEventListener('keydown',e=>{
-  if(!lb.classList.contains('on'))return;
-  if(e.key==='ArrowLeft'){lbIdx=(lbIdx-1+lbImgs.length)%lbImgs.length;showLb();}
-  if(e.key==='ArrowRight'){lbIdx=(lbIdx+1)%lbImgs.length;showLb();}
-  if(e.key==='Escape')closeLb();
+document.getElementById('lbp').addEventListener('click',()=>{lbI=(lbI-1+lbArr.length)%lbArr.length;showLb();});
+document.getElementById('lbn').addEventListener('click',()=>{lbI=(lbI+1)%lbArr.length;showLb();});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='ArrowLeft'){lbI=(lbI-1+lbArr.length)%lbArr.length;showLb();}if(e.key==='ArrowRight'){lbI=(lbI+1)%lbArr.length;showLb();}if(e.key==='Escape')closeLb();});
+
+/* STRIP */
+const st=document.getElementById('strip'),sr=document.getElementById('srow'),pf=document.getElementById('pf'),pl=document.getElementById('pl');
+let dg=false,sx,sl;
+st.addEventListener('mousedown',e=>{dg=true;sx=e.pageX-st.offsetLeft;sl=st.scrollLeft;st.classList.add('drag');});
+document.addEventListener('mouseup',()=>{dg=false;st.classList.remove('drag');});
+st.addEventListener('mousemove',e=>{if(!dg)return;e.preventDefault();st.scrollLeft=sl-(e.pageX-st.offsetLeft-sx)*1.3;updS();});
+st.addEventListener('touchstart',e=>{sx=e.touches[0].pageX-st.offsetLeft;sl=st.scrollLeft;},{passive:true});
+st.addEventListener('touchmove',e=>{st.scrollLeft=sl-(e.touches[0].pageX-st.offsetLeft-sx)*1.2;updS();},{passive:true});
+st.addEventListener('scroll',updS,{passive:true});
+document.getElementById('snext').addEventListener('click',()=>{st.scrollBy({left:340,behavior:'smooth'});setTimeout(updS,440);});
+document.getElementById('sprev').addEventListener('click',()=>{st.scrollBy({left:-340,behavior:'smooth'});setTimeout(updS,440);});
+function updS(){const max=st.scrollWidth-st.clientWidth,p=max>0?st.scrollLeft/max:0;pf.style.width=Math.round(p*100)+'%';const cards=[...sr.querySelectorAll('.sc')].filter(c=>c.style.display!=='none');pl.textContent=Math.min(Math.round(p*(cards.length-1))+1,cards.length)+' / '+cards.length;}
+updS();
+
+/* STRIP FILTER */
+document.querySelectorAll('.pflt').forEach(b=>{b.addEventListener('click',()=>{
+  document.querySelectorAll('.pflt').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const f=b.dataset.pf;
+  [...sr.querySelectorAll('.sc')].forEach(c=>c.style.display=(f==='all'||c.dataset.pc===f)?'block':'none');
+  st.scrollLeft=0;setTimeout(updS,80);
+});});
+
+/* STRIP LIGHTBOX */
+sr.querySelectorAll('.sc').forEach(c=>{c.addEventListener('click',()=>{
+  const v=[...sr.querySelectorAll('.sc')].filter(x=>x.style.display!=='none');
+  lbArr=v.map(x=>x.querySelector('img').src);lbI=v.indexOf(c);showLb();
+});});
+
+/* MODAL */
+function openModal(pkg){document.getElementById('mpkg').textContent=pkg;document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow='';}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target===document.getElementById('modal'))closeModal();});
+
+/* FORM FORMSPREE */
+document.getElementById('cform').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=document.getElementById('fsubmit');
+  btn.innerHTML='Envoi…';btn.style.opacity='.6';btn.disabled=true;
+  try{
+    const r=await fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}});
+    if(r.ok){this.style.display='none';document.getElementById('fok').style.display='block';toast("🎉 Envoyé — réponse dans les 24h !");}
+    else{btn.innerHTML='Envoyer la demande <i class="fa-solid fa-paper-plane" style="font-size:10px"></i>';btn.style.opacity='1';btn.disabled=false;toast('⚠ Erreur. Essayez WhatsApp.');}
+  }catch{btn.innerHTML='Envoyer la demande <i class="fa-solid fa-paper-plane" style="font-size:10px"></i>';btn.style.opacity='1';btn.disabled=false;toast('⚠ Pas de connexion.');}
 });
 
-// BOOKING
-function openBook(pkg){document.getElementById('mpkg').textContent=pkg;document.getElementById('mw').classList.add('on');document.body.style.overflow='hidden';}
-function closeBk(){document.getElementById('mw').classList.remove('on');document.body.style.overflow='';}
-document.getElementById('mw').addEventListener('click',e=>{if(e.target===document.getElementById('mw'))closeBk();});
+/* TOAST */
+function toast(m){const t=document.getElementById('tst');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3600);}
 
-// FORM
-function submitForm(){
-  const n=document.getElementById('fn').value,e=document.getElementById('fe').value,p=document.getElementById('fp').value;
-  if(!n||!e||!p){showToast('⚠ Fill required fields');return;}
-  const b=document.querySelector('.sbtn');b.textContent='Sending...';
-  setTimeout(()=>{
-    b.innerHTML='Send Request <i class="fa-solid fa-paper-plane"></i>';
-    document.getElementById('fok').style.display='block';
-    ['fn','fe','fp','fd','fm'].forEach(id=>document.getElementById(id).value='');
-    showToast("🎉 Sent! We'll reply in 24h.");
-  },1400);
-}
-
-// TOAST
-function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),3500);}
-
-// PARALLAX
-window.addEventListener('scroll',()=>{const img=document.querySelector('.hmi');if(img&&scrollY<innerHeight)img.style.transform=`translateY(${scrollY*.18}px)`;});
+/* PARALLAX */
+window.addEventListener('scroll',()=>{const img=document.querySelector('.hero-photo');if(img&&scrollY<innerHeight)img.style.transform=`translateY(${scrollY*.13}px)`;},{passive:true});
 </script>
 </body>
 </html>
